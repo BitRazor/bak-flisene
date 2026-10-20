@@ -1,0 +1,814 @@
+{
+  "version": 1,
+  "encoding": "srgb",
+  "format": "webp",
+  "flipY": true,
+  "uvChannel": 1,
+  "surfaces": {
+    "floor": {
+      "file": "{mood}/floor.webp",
+      "size": 2048
+    },
+    "ceiling": {
+      "file": "{mood}/ceiling.webp",
+      "size": 1024
+    },
+    "wall_back": {
+      "file": "{mood}/wall_back.webp",
+      "size": 2048
+    },
+    "wall_front": {
+      "file": "{mood}/wall_front.webp",
+      "size": 1024
+    },
+    "wall_left": {
+      "file": "{mood}/wall_left.webp",
+      "size": 1024
+    },
+    "wall_right": {
+      "file": "{mood}/wall_right.webp",
+      "size": 1024
+    }
+  },
+  "howToUse": "material.lightMap = texture (colorSpace SRGB, channel 1, flipY true, clamp to edge); material.lightMapIntensity = moods[mood].lightMapIntensity; renderer AgX, toneMappingExposure 1. The map holds ALL diffuse light (direct + bounced): extra ambient, hemisphere or environment diffuse light on the shell adds on top of it. Real-time lights for fixtures: multiply their intensities in these units by moods[mood].exposure.",
+  "units": "texel (decoded to linear) * scale = irradiance/pi in Blender units; Blender units * 683 = photometric (lux / cd/m2 / lm). lightMapIntensity = pi * scale * exposure.",
+  "extraFaces": [
+    {
+      "surface": "wall_back",
+      "name": "niche_back",
+      "boxMin": [
+        0.25,
+        1.1,
+        -0.1
+      ],
+      "boxMax": [
+        0.85,
+        1.4,
+        -0.1
+      ],
+      "u": {
+        "axis": "x",
+        "from": 0.25,
+        "to": 0.85,
+        "uFrom": 0.1515385,
+        "uTo": 0.2715385
+      },
+      "v": {
+        "axis": "y",
+        "from": 1.1,
+        "to": 1.4,
+        "vFrom": 0.4883333,
+        "vTo": 0.5533333
+      },
+      "region": [
+        0.0961538,
+        0.3269231,
+        0.4583333,
+        0.5833333
+      ]
+    },
+    {
+      "surface": "wall_back",
+      "name": "niche_left",
+      "boxMin": [
+        0.25,
+        1.1,
+        -0.1
+      ],
+      "boxMax": [
+        0.25,
+        1.4,
+        0.0
+      ],
+      "u": {
+        "axis": "z",
+        "from": 0,
+        "to": -0.1,
+        "uFrom": 0.1315385,
+        "uTo": 0.1515385
+      },
+      "v": {
+        "axis": "y",
+        "from": 1.1,
+        "to": 1.4,
+        "vFrom": 0.4883333,
+        "vTo": 0.5533333
+      },
+      "region": [
+        0.0961538,
+        0.3269231,
+        0.4583333,
+        0.5833333
+      ]
+    },
+    {
+      "surface": "wall_back",
+      "name": "niche_right",
+      "boxMin": [
+        0.85,
+        1.1,
+        -0.1
+      ],
+      "boxMax": [
+        0.85,
+        1.4,
+        0.0
+      ],
+      "u": {
+        "axis": "z",
+        "from": -0.1,
+        "to": 0,
+        "uFrom": 0.2715385,
+        "uTo": 0.2915385
+      },
+      "v": {
+        "axis": "y",
+        "from": 1.1,
+        "to": 1.4,
+        "vFrom": 0.4883333,
+        "vTo": 0.5533333
+      },
+      "region": [
+        0.0961538,
+        0.3269231,
+        0.4583333,
+        0.5833333
+      ]
+    },
+    {
+      "surface": "wall_back",
+      "name": "niche_sill",
+      "boxMin": [
+        0.25,
+        1.1,
+        -0.1
+      ],
+      "boxMax": [
+        0.85,
+        1.1,
+        0.0
+      ],
+      "u": {
+        "axis": "x",
+        "from": 0.25,
+        "to": 0.85,
+        "uFrom": 0.1515385,
+        "uTo": 0.2715385
+      },
+      "v": {
+        "axis": "z",
+        "from": 0,
+        "to": -0.1,
+        "vFrom": 0.4666667,
+        "vTo": 0.4883333
+      },
+      "region": [
+        0.0961538,
+        0.3269231,
+        0.4583333,
+        0.5833333
+      ]
+    },
+    {
+      "surface": "wall_back",
+      "name": "niche_top",
+      "boxMin": [
+        0.25,
+        1.4,
+        -0.1
+      ],
+      "boxMax": [
+        0.85,
+        1.4,
+        0.0
+      ],
+      "u": {
+        "axis": "x",
+        "from": 0.25,
+        "to": 0.85,
+        "uFrom": 0.1515385,
+        "uTo": 0.2715385
+      },
+      "v": {
+        "axis": "z",
+        "from": -0.1,
+        "to": 0,
+        "vFrom": 0.5533333,
+        "vTo": 0.575
+      },
+      "region": [
+        0.0961538,
+        0.3269231,
+        0.4583333,
+        0.5833333
+      ]
+    },
+    {
+      "surface": "wall_right",
+      "name": "boxing_front",
+      "boxMin": [
+        2.4,
+        -0.006972,
+        0.75
+      ],
+      "boxMax": [
+        2.4,
+        1.2,
+        1.65
+      ],
+      "u": {
+        "axis": "z",
+        "from": 0.75,
+        "to": 1.65,
+        "uFrom": 0.3007692,
+        "uTo": 0.4992308
+      },
+      "v": {
+        "axis": "y",
+        "from": 0,
+        "to": 1.2,
+        "vFrom": 0.0570513,
+        "vTo": 0.3878205
+      },
+      "region": [
+        0.25,
+        0.55,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "surface": "wall_right",
+      "name": "boxing_back_side",
+      "boxMin": [
+        2.4,
+        -0.006972,
+        0.75
+      ],
+      "boxMax": [
+        2.6,
+        1.2,
+        0.75
+      ],
+      "u": {
+        "axis": "x",
+        "from": 2.6,
+        "to": 2.4,
+        "uFrom": 0.2566667,
+        "uTo": 0.3007692
+      },
+      "v": {
+        "axis": "y",
+        "from": 0,
+        "to": 1.2,
+        "vFrom": 0.0570513,
+        "vTo": 0.3878205
+      },
+      "region": [
+        0.25,
+        0.55,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "surface": "wall_right",
+      "name": "boxing_door_side",
+      "boxMin": [
+        2.4,
+        -0.004409,
+        1.65
+      ],
+      "boxMax": [
+        2.6,
+        1.2,
+        1.65
+      ],
+      "u": {
+        "axis": "x",
+        "from": 2.4,
+        "to": 2.6,
+        "uFrom": 0.4992308,
+        "uTo": 0.5433333
+      },
+      "v": {
+        "axis": "y",
+        "from": 0,
+        "to": 1.2,
+        "vFrom": 0.0570513,
+        "vTo": 0.3878205
+      },
+      "region": [
+        0.25,
+        0.55,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "surface": "wall_right",
+      "name": "boxing_top",
+      "boxMin": [
+        2.4,
+        1.2,
+        0.75
+      ],
+      "boxMax": [
+        2.6,
+        1.2,
+        1.65
+      ],
+      "u": {
+        "axis": "z",
+        "from": 0.75,
+        "to": 1.65,
+        "uFrom": 0.3007692,
+        "uTo": 0.4992308
+      },
+      "v": {
+        "axis": "x",
+        "from": 2.4,
+        "to": 2.6,
+        "vFrom": 0.3878205,
+        "vTo": 0.4429487
+      },
+      "region": [
+        0.25,
+        0.55,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "surface": "wall_right",
+      "name": "reveal_back_side",
+      "boxMin": [
+        2.6,
+        1.4,
+        0.9
+      ],
+      "boxMax": [
+        2.8,
+        2.0,
+        0.9
+      ],
+      "u": {
+        "axis": "x",
+        "from": 2.6,
+        "to": 2.8,
+        "uFrom": 0.3066667,
+        "uTo": 0.344
+      },
+      "v": {
+        "axis": "y",
+        "from": 1.4,
+        "to": 2,
+        "vFrom": 0.6383333,
+        "vTo": 0.7783333
+      },
+      "region": [
+        0.3,
+        0.5,
+        0.5833333,
+        0.8333333
+      ]
+    },
+    {
+      "surface": "wall_right",
+      "name": "reveal_door_side",
+      "boxMin": [
+        2.6,
+        1.4,
+        1.5
+      ],
+      "boxMax": [
+        2.8,
+        2.0,
+        1.5
+      ],
+      "u": {
+        "axis": "x",
+        "from": 2.8,
+        "to": 2.6,
+        "uFrom": 0.456,
+        "uTo": 0.4933333
+      },
+      "v": {
+        "axis": "y",
+        "from": 1.4,
+        "to": 2,
+        "vFrom": 0.6383333,
+        "vTo": 0.7783333
+      },
+      "region": [
+        0.3,
+        0.5,
+        0.5833333,
+        0.8333333
+      ]
+    },
+    {
+      "surface": "wall_right",
+      "name": "reveal_sill",
+      "boxMin": [
+        2.6,
+        1.4,
+        0.9
+      ],
+      "boxMax": [
+        2.8,
+        1.4,
+        1.5
+      ],
+      "u": {
+        "axis": "z",
+        "from": 0.9,
+        "to": 1.5,
+        "uFrom": 0.344,
+        "uTo": 0.456
+      },
+      "v": {
+        "axis": "x",
+        "from": 2.6,
+        "to": 2.8,
+        "vFrom": 0.5916667,
+        "vTo": 0.6383333
+      },
+      "region": [
+        0.3,
+        0.5,
+        0.5833333,
+        0.8333333
+      ]
+    },
+    {
+      "surface": "wall_right",
+      "name": "reveal_head",
+      "boxMin": [
+        2.6,
+        2.0,
+        0.9
+      ],
+      "boxMax": [
+        2.8,
+        2.0,
+        1.5
+      ],
+      "u": {
+        "axis": "z",
+        "from": 0.9,
+        "to": 1.5,
+        "uFrom": 0.344,
+        "uTo": 0.456
+      },
+      "v": {
+        "axis": "x",
+        "from": 2.8,
+        "to": 2.6,
+        "vFrom": 0.7783333,
+        "vTo": 0.825
+      },
+      "region": [
+        0.3,
+        0.5,
+        0.5833333,
+        0.8333333
+      ]
+    }
+  ],
+  "extraFacesNote": "Faces outside the six planes are baked into hidden parts of their wall's map: the niche (inside the niche hole of wall_back), the toilet boxing (in the part of wall_right that the boxing covers) and the window reveal (inside the window hole of wall_right). For a point p (app metres) on such a face: u = uFrom + (p[u.axis] - u.from) / (u.to - u.from) * (uTo - uFrom); v likewise.",
+  "assumptions": {
+    "doorAngleDeg": null,
+    "frontWallThickness": 0.12,
+    "hallwaySideReach": 0.6,
+    "netGutterM": 0.02,
+    "shellAlbedoLinear": {
+      "floor": [
+        0.5,
+        0.46,
+        0.4
+      ],
+      "ceiling": [
+        0.78,
+        0.77,
+        0.74
+      ],
+      "wall": [
+        0.62,
+        0.6,
+        0.56
+      ]
+    },
+    "previewVerticalFovDeg": 72.0
+  },
+  "moods": {
+    "evening": {
+      "scale": 0.6633626890182496,
+      "exposureStops": 2.2452205069842917,
+      "exposure": 4.741095675443159,
+      "lightMapIntensity": 9.88051616574303,
+      "lightMapIntensityPhysical": 2.0840153504853034,
+      "clippedFraction": 0.000696578960358571,
+      "whiteBalanceK": 3500,
+      "lights": [
+        {
+          "type": "spot",
+          "name": "downlight0",
+          "position": [
+            0.65,
+            2.37,
+            0.75
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "lumens": 450,
+          "cct": 2700,
+          "colourLinear": [
+            1.3074,
+            0.9591,
+            0.5
+          ],
+          "coneDeg": 90,
+          "blend": 0.65,
+          "radius": 0.025,
+          "blenderPowerW": 6.6685,
+          "threeIntensity": 0.530663,
+          "threeAngle": 0.7854,
+          "threePenumbra": 0.65
+        },
+        {
+          "type": "spot",
+          "name": "downlight1",
+          "position": [
+            1.9500000000000002,
+            2.37,
+            0.75
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "lumens": 450,
+          "cct": 2700,
+          "colourLinear": [
+            1.3074,
+            0.9591,
+            0.5
+          ],
+          "coneDeg": 90,
+          "blend": 0.65,
+          "radius": 0.025,
+          "blenderPowerW": 6.6685,
+          "threeIntensity": 0.530663,
+          "threeAngle": 0.7854,
+          "threePenumbra": 0.65
+        },
+        {
+          "type": "spot",
+          "name": "downlight2",
+          "position": [
+            0.65,
+            2.37,
+            1.6
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "lumens": 450,
+          "cct": 2700,
+          "colourLinear": [
+            1.3074,
+            0.9591,
+            0.5
+          ],
+          "coneDeg": 90,
+          "blend": 0.65,
+          "radius": 0.025,
+          "blenderPowerW": 6.6685,
+          "threeIntensity": 0.530663,
+          "threeAngle": 0.7854,
+          "threePenumbra": 0.65
+        },
+        {
+          "type": "spot",
+          "name": "downlight3",
+          "position": [
+            1.9500000000000002,
+            2.37,
+            1.6
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "lumens": 450,
+          "cct": 2700,
+          "colourLinear": [
+            1.3074,
+            0.9591,
+            0.5
+          ],
+          "coneDeg": 90,
+          "blend": 0.65,
+          "radius": 0.025,
+          "blenderPowerW": 6.6685,
+          "threeIntensity": 0.530663,
+          "threeAngle": 0.7854,
+          "threePenumbra": 0.65
+        },
+        {
+          "type": "spot",
+          "name": "downlight4",
+          "position": [
+            0.65,
+            2.37,
+            2.45
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "lumens": 450,
+          "cct": 2700,
+          "colourLinear": [
+            1.3074,
+            0.9591,
+            0.5
+          ],
+          "coneDeg": 90,
+          "blend": 0.65,
+          "radius": 0.025,
+          "blenderPowerW": 6.6685,
+          "threeIntensity": 0.530663,
+          "threeAngle": 0.7854,
+          "threePenumbra": 0.65
+        },
+        {
+          "type": "spot",
+          "name": "downlight5",
+          "position": [
+            1.9500000000000002,
+            2.37,
+            2.45
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "lumens": 450,
+          "cct": 2700,
+          "colourLinear": [
+            1.3074,
+            0.9591,
+            0.5
+          ],
+          "coneDeg": 90,
+          "blend": 0.65,
+          "radius": 0.025,
+          "blenderPowerW": 6.6685,
+          "threeIntensity": 0.530663,
+          "threeAngle": 0.7854,
+          "threePenumbra": 0.65
+        },
+        {
+          "type": "emitter",
+          "name": "led_strip",
+          "lumens": 300,
+          "areaM2": 0.01152,
+          "cd_m2": 8289.3,
+          "cct": 3000,
+          "colourLinear": [
+            1.1688,
+            0.9808,
+            0.693
+          ]
+        }
+      ],
+      "sky": {
+        "zenith": {
+          "cd_m2": 12,
+          "colour": "2f4e86"
+        },
+        "horizon": {
+          "cd_m2": 40,
+          "colour": "9fb0cc"
+        },
+        "ground": {
+          "cd_m2": 3,
+          "colour": "2c302e"
+        }
+      },
+      "bakeSeconds": 1617.1,
+      "samples": 512,
+      "device": "OPTIX",
+      "check": {
+        "shellPixels": 589272,
+        "meanRatio": 1.0025269985198975,
+        "medianRatio": 1.003311276435852,
+        "p05Ratio": 0.9905568361282349,
+        "p95Ratio": 1.018904209136963,
+        "meanAbsRelDiff": 0.007125109434127808
+      },
+      "checkViews": {
+        "shower": {
+          "shellPixels": 1388300,
+          "meanRatio": 1.0004663467407227,
+          "medianRatio": 1.000690221786499,
+          "p05Ratio": 0.9876623153686523,
+          "p95Ratio": 1.0171838998794556,
+          "meanAbsRelDiff": 0.006997290067374706
+        },
+        "toilet": {
+          "shellPixels": 1506239,
+          "meanRatio": 1.0034853219985962,
+          "medianRatio": 1.0037246942520142,
+          "p05Ratio": 0.9904813766479492,
+          "p95Ratio": 1.018784999847412,
+          "meanAbsRelDiff": 0.007737298496067524
+        }
+      }
+    },
+    "day": {
+      "scale": 0.9271310985088349,
+      "exposureStops": 1.9991634896376074,
+      "exposure": 3.9976813730668512,
+      "lightMapIntensity": 11.643919600912845,
+      "lightMapIntensityPhysical": 2.9126682479899904,
+      "clippedFraction": 0.0009857729845800696,
+      "whiteBalanceK": 6500,
+      "lights": [
+        {
+          "type": "sun",
+          "lux": 65000,
+          "cct": 5500,
+          "elevationDeg": 50,
+          "azimuthDeg": -15,
+          "directionTravel": [
+            -0.6209,
+            -0.766,
+            -0.1664
+          ],
+          "colourLinear": [
+            1.096,
+            0.9883,
+            0.8335
+          ],
+          "threeIntensity": 95.1684
+        }
+      ],
+      "sky": {
+        "zenith": {
+          "cd_m2": 4000,
+          "colour": 12000
+        },
+        "horizon": {
+          "cd_m2": 7000,
+          "colour": 7500
+        },
+        "ground": {
+          "cd_m2": 1500,
+          "colour": "77786a"
+        }
+      },
+      "bakeSeconds": 840.9,
+      "samples": 512,
+      "device": "OPTIX",
+      "check": {
+        "shellPixels": 589429,
+        "meanRatio": 1.0002433061599731,
+        "medianRatio": 1.0014138221740723,
+        "p05Ratio": 0.9608903527259827,
+        "p95Ratio": 1.0478932857513428,
+        "meanAbsRelDiff": 0.020445557311177254
+      },
+      "checkViews": {
+        "shower": {
+          "shellPixels": 1388300,
+          "meanRatio": 1.00791335105896,
+          "medianRatio": 1.0083178281784058,
+          "p05Ratio": 0.9814406037330627,
+          "p95Ratio": 1.0398361682891846,
+          "meanAbsRelDiff": 0.016105106100440025
+        },
+        "toilet": {
+          "shellPixels": 1506239,
+          "meanRatio": 0.8839028477668762,
+          "medianRatio": 1.0055930614471436,
+          "p05Ratio": 0.9473003149032593,
+          "p95Ratio": 1.0477025508880615,
+          "meanAbsRelDiff": 0.030326757580041885
+        }
+      }
+    }
+  },
+  "generated": "2026-10-19T21:40:23"
+}

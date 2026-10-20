@@ -1,0 +1,168 @@
+{
+ "asset": {
+  "version": "2.0",
+  "generator": "bathroom-exhibit asset pipeline (simplified from Poly Haven, CC0)",
+  "copyright": "CC0 1.0: Rubber Duck Toy by Plat251, Poly Haven, https://polyhaven.com/a/rubber_duck_toy (simplified for phones 2026-10-19)"
+ },
+ "scene": 0,
+ "scenes": [
+  {
+   "name": "rubber_duck_toy",
+   "nodes": [
+    0
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "body",
+   "mesh": 0
+  }
+ ],
+ "meshes": [
+  {
+   "name": "body",
+   "primitives": [
+    {
+     "attributes": {
+      "POSITION": 0,
+      "NORMAL": 1,
+      "TEXCOORD_0": 2
+     },
+     "indices": 3,
+     "material": 0,
+     "mode": 4
+    }
+   ]
+  }
+ ],
+ "materials": [
+  {
+   "name": "rubber_duck_toy",
+   "doubleSided": true,
+   "pbrMetallicRoughness": {
+    "baseColorTexture": {
+     "index": 0
+    },
+    "metallicFactor": 0,
+    "roughnessFactor": 1,
+    "metallicRoughnessTexture": {
+     "index": 2
+    }
+   },
+   "normalTexture": {
+    "index": 1
+   },
+   "occlusionTexture": {
+    "index": 2
+   }
+  }
+ ],
+ "textures": [
+  {
+   "sampler": 0,
+   "source": 0
+  },
+  {
+   "sampler": 0,
+   "source": 1
+  },
+  {
+   "sampler": 0,
+   "source": 2
+  }
+ ],
+ "images": [
+  {
+   "name": "rubber_duck_toy_diff",
+   "uri": "rubber_duck_toy_diff.jpg",
+   "mimeType": "image/jpeg"
+  },
+  {
+   "name": "rubber_duck_toy_nor",
+   "uri": "rubber_duck_toy_nor.jpg",
+   "mimeType": "image/jpeg"
+  },
+  {
+   "name": "rubber_duck_toy_arm",
+   "uri": "rubber_duck_toy_arm.jpg",
+   "mimeType": "image/jpeg"
+  }
+ ],
+ "samplers": [
+  {
+   "magFilter": 9729,
+   "minFilter": 9987,
+   "wrapS": 10497,
+   "wrapT": 10497
+  }
+ ],
+ "accessors": [
+  {
+   "bufferView": 0,
+   "componentType": 5126,
+   "count": 663,
+   "type": "VEC3",
+   "min": [
+    -0.106752410531044,
+    -0.00003260374069213867,
+    -0.14516116678714752
+   ],
+   "max": [
+    0.10574862360954285,
+    0.28525999188423157,
+    0.15289908647537231
+   ]
+  },
+  {
+   "bufferView": 1,
+   "componentType": 5126,
+   "count": 663,
+   "type": "VEC3"
+  },
+  {
+   "bufferView": 2,
+   "componentType": 5126,
+   "count": 663,
+   "type": "VEC2"
+  },
+  {
+   "bufferView": 3,
+   "componentType": 5123,
+   "count": 3000,
+   "type": "SCALAR"
+  }
+ ],
+ "bufferViews": [
+  {
+   "buffer": 0,
+   "byteOffset": 0,
+   "byteLength": 7956,
+   "target": 34962
+  },
+  {
+   "buffer": 0,
+   "byteOffset": 7956,
+   "byteLength": 7956,
+   "target": 34962
+  },
+  {
+   "buffer": 0,
+   "byteOffset": 15912,
+   "byteLength": 5304,
+   "target": 34962
+  },
+  {
+   "buffer": 0,
+   "byteOffset": 21216,
+   "byteLength": 6000,
+   "target": 34963
+  }
+ ],
+ "buffers": [
+  {
+   "byteLength": 27216,
+   "uri": "rubber_duck_toy.bin"
+  }
+ ]
+}

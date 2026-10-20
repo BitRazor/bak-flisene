@@ -1,0 +1,168 @@
+{
+ "asset": {
+  "version": "2.0",
+  "generator": "bathroom-exhibit asset pipeline (simplified from Poly Haven, CC0)",
+  "copyright": "CC0 1.0: Wicker Basket 01 by Kuutti Siitonen, Poly Haven, https://polyhaven.com/a/wicker_basket_01 (simplified for phones 2026-10-19)"
+ },
+ "scene": 0,
+ "scenes": [
+  {
+   "name": "wicker_basket_01",
+   "nodes": [
+    0
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "basket",
+   "mesh": 0
+  }
+ ],
+ "meshes": [
+  {
+   "name": "basket",
+   "primitives": [
+    {
+     "attributes": {
+      "POSITION": 0,
+      "NORMAL": 1,
+      "TEXCOORD_0": 2
+     },
+     "indices": 3,
+     "material": 0,
+     "mode": 4
+    }
+   ]
+  }
+ ],
+ "materials": [
+  {
+   "name": "wicker_basket_01",
+   "doubleSided": true,
+   "pbrMetallicRoughness": {
+    "baseColorTexture": {
+     "index": 0
+    },
+    "metallicFactor": 0,
+    "roughnessFactor": 1,
+    "metallicRoughnessTexture": {
+     "index": 2
+    }
+   },
+   "normalTexture": {
+    "index": 1
+   },
+   "occlusionTexture": {
+    "index": 2
+   }
+  }
+ ],
+ "textures": [
+  {
+   "sampler": 0,
+   "source": 0
+  },
+  {
+   "sampler": 0,
+   "source": 1
+  },
+  {
+   "sampler": 0,
+   "source": 2
+  }
+ ],
+ "images": [
+  {
+   "name": "wicker_basket_01_diff",
+   "uri": "wicker_basket_01_diff.jpg",
+   "mimeType": "image/jpeg"
+  },
+  {
+   "name": "wicker_basket_01_nor",
+   "uri": "wicker_basket_01_nor.jpg",
+   "mimeType": "image/jpeg"
+  },
+  {
+   "name": "wicker_basket_01_arm",
+   "uri": "wicker_basket_01_arm.jpg",
+   "mimeType": "image/jpeg"
+  }
+ ],
+ "samplers": [
+  {
+   "magFilter": 9729,
+   "minFilter": 9987,
+   "wrapS": 10497,
+   "wrapT": 10497
+  }
+ ],
+ "accessors": [
+  {
+   "bufferView": 0,
+   "componentType": 5126,
+   "count": 6922,
+   "type": "VEC3",
+   "min": [
+    -0.19165770709514618,
+    -0.0009166551753878593,
+    -0.1468689888715744
+   ],
+   "max": [
+    0.19134199619293213,
+    0.11649076640605927,
+    0.14597253501415253
+   ]
+  },
+  {
+   "bufferView": 1,
+   "componentType": 5126,
+   "count": 6922,
+   "type": "VEC3"
+  },
+  {
+   "bufferView": 2,
+   "componentType": 5126,
+   "count": 6922,
+   "type": "VEC2"
+  },
+  {
+   "bufferView": 3,
+   "componentType": 5123,
+   "count": 25800,
+   "type": "SCALAR"
+  }
+ ],
+ "bufferViews": [
+  {
+   "buffer": 0,
+   "byteOffset": 0,
+   "byteLength": 83064,
+   "target": 34962
+  },
+  {
+   "buffer": 0,
+   "byteOffset": 83064,
+   "byteLength": 83064,
+   "target": 34962
+  },
+  {
+   "buffer": 0,
+   "byteOffset": 166128,
+   "byteLength": 55376,
+   "target": 34962
+  },
+  {
+   "buffer": 0,
+   "byteOffset": 221504,
+   "byteLength": 51600,
+   "target": 34963
+  }
+ ],
+ "buffers": [
+  {
+   "byteLength": 273104,
+   "uri": "wicker_basket_01.bin"
+  }
+ ]
+}

@@ -1,0 +1,3166 @@
+{
+ "version": 1,
+ "note": "Same roles as the 'sounds' section of ../manifest.json; file paths here are relative to this folder (app/assets/sounds/).",
+ "roles": {
+  "knock_tile": {
+   "files": [
+    "knock_tile_1.m4a",
+    "knock_tile_2.m4a",
+    "knock_tile_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.85,
+   "from": "oga2/sfx100v2_misc_30.ogg; oga2/sfx100v2_misc_19.ogg; oga2/sfx100v2_misc_14.ogg",
+   "why": "Hard, dry, bright single strike with a short decay, so it reads as a glazed tile and not as glass or metal. The packs hold no recording labelled 'tile', so these are three unlabelled hard impacts picked by measurement: exactly one strike each, a 20 dB decay within 30-70 ms, spectral centroid 2.2-3.8 kHz (misc_30, misc_19, misc_14). Not auditioned.",
+   "variants": [
+    {
+     "file": "knock_tile_1.m4a",
+     "from": "oga2/sfx100v2_misc_30.ogg",
+     "durationS": 0.169,
+     "peakDb": -3.0,
+     "rmsDb": -24.4,
+     "activeRmsDb": -23.9,
+     "centroidHz": 2197,
+     "energyUnder220HzPct": 19,
+     "bytes": 3086,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_30.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.3,
+      "strikes": 1,
+      "centroidHz": 2250,
+      "decay20dbMs": 30
+     }
+    },
+    {
+     "file": "knock_tile_2.m4a",
+     "from": "oga2/sfx100v2_misc_19.ogg",
+     "durationS": 0.295,
+     "peakDb": -3.1,
+     "rmsDb": -28.5,
+     "activeRmsDb": -27.5,
+     "centroidHz": 3953,
+     "energyUnder220HzPct": 2,
+     "bytes": 4831,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_19.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.47,
+      "strikes": 1,
+      "centroidHz": 3811,
+      "decay20dbMs": 45
+     }
+    },
+    {
+     "file": "knock_tile_3.m4a",
+     "from": "oga2/sfx100v2_misc_14.ogg",
+     "durationS": 0.226,
+     "peakDb": -3.9,
+     "rmsDb": -30.1,
+     "activeRmsDb": -29.5,
+     "centroidHz": 3533,
+     "energyUnder220HzPct": 6,
+     "bytes": 3835,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_14.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.37,
+      "strikes": 1,
+      "centroidHz": 3555,
+      "decay20dbMs": 75
+     }
+    }
+   ]
+  },
+  "knock_glass": {
+   "files": [
+    "knock_glass_1.m4a",
+    "knock_glass_2.m4a",
+    "knock_glass_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.8,
+   "from": "oga1/glass_04.ogg; oga1/glass_05.ogg; oga2/sfx100v2_glass_01.ogg",
+   "why": "Single taps on glass: a sharp strike followed by several thin ringing modes (horizontal lines in the spectrogram), ring lasting 0.1-0.8 s, centroid 2.7-5.8 kHz. The file names say glass. glass_04 and glass_05 of pack 1 have the longest single rings (0.96 s and 1.03 s long, one strike each); glass_01 of pack 2 is one clean tone at 2.7 kHz with a faint bump near its end. Several other glass files are clatters of 3-5 hits (pack 1 glass_03; pack 2 glass_02, _03, _05, _06) and were not used. Phone recordings of a drinking-glass-sized object, so a large shower panel would ring lower; standIn.",
+   "variants": [
+    {
+     "file": "knock_glass_1.m4a",
+     "from": "oga1/glass_04.ogg",
+     "durationS": 0.679,
+     "peakDb": -2.8,
+     "rmsDb": -26.4,
+     "activeRmsDb": -25.0,
+     "centroidHz": 4677,
+     "energyUnder220HzPct": 0,
+     "bytes": 9355,
+     "sources": [
+      [
+       "oga1",
+       "glass_04.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.96,
+      "strikes": 1,
+      "centroidHz": 4640,
+      "decay20dbMs": 160
+     }
+    },
+    {
+     "file": "knock_glass_2.m4a",
+     "from": "oga1/glass_05.ogg",
+     "durationS": 0.422,
+     "peakDb": -3.1,
+     "rmsDb": -23.8,
+     "activeRmsDb": -22.1,
+     "centroidHz": 5764,
+     "energyUnder220HzPct": 0,
+     "bytes": 6294,
+     "sources": [
+      [
+       "oga1",
+       "glass_05.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 1.03,
+      "strikes": 1,
+      "centroidHz": 5784,
+      "decay20dbMs": 100
+     }
+    },
+    {
+     "file": "knock_glass_3.m4a",
+     "from": "oga2/sfx100v2_glass_01.ogg",
+     "durationS": 0.219,
+     "peakDb": -2.6,
+     "rmsDb": -18.0,
+     "activeRmsDb": -16.4,
+     "centroidHz": 2783,
+     "energyUnder220HzPct": 0,
+     "bytes": 3755,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_glass_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.36,
+      "strikes": 2,
+      "centroidHz": 2781,
+      "decay20dbMs": 50
+     }
+    }
+   ]
+  },
+  "knock_wood": {
+   "files": [
+    "knock_wood_1.m4a",
+    "knock_wood_2.m4a",
+    "knock_wood_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.9,
+   "from": "oga2/sfx100v2_wood_hit_01.ogg; oga1/wooden_03.ogg; oga2/sfx100v2_wood_hit_03.ogg",
+   "why": "Knuckle on wood: a hollow low 'tonk' (wood_hit_01, centroid ~210 Hz), a mid-pitched woodblock-like tok (wooden_03, ~1.2 kHz) and a brighter solid 'tak' (wood_hit_03, ~1.5 kHz, broadband). Names say wood; one strike each (wooden_03, wood_hit_03) or a single low thump with body resonance (wood_hit_01). Gives a hollow-box to solid-oak range for the vanity and cupboard fronts.",
+   "variants": [
+    {
+     "file": "knock_wood_1.m4a",
+     "from": "oga2/sfx100v2_wood_hit_01.ogg",
+     "durationS": 0.234,
+     "peakDb": -3.0,
+     "rmsDb": -17.9,
+     "activeRmsDb": -17.4,
+     "centroidHz": 234,
+     "energyUnder220HzPct": 53,
+     "bytes": 3929,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_wood_hit_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.35,
+      "strikes": 4,
+      "centroidHz": 214,
+      "decay20dbMs": 70
+     }
+    },
+    {
+     "file": "knock_wood_2.m4a",
+     "from": "oga1/wooden_03.ogg",
+     "durationS": 0.388,
+     "peakDb": -3.0,
+     "rmsDb": -24.7,
+     "activeRmsDb": -23.8,
+     "centroidHz": 1225,
+     "energyUnder220HzPct": 0,
+     "bytes": 5881,
+     "sources": [
+      [
+       "oga1",
+       "wooden_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.43,
+      "strikes": 1,
+      "centroidHz": 1220,
+      "decay20dbMs": 110
+     }
+    },
+    {
+     "file": "knock_wood_3.m4a",
+     "from": "oga2/sfx100v2_wood_hit_03.ogg",
+     "durationS": 0.275,
+     "peakDb": -1.5,
+     "rmsDb": -23.2,
+     "activeRmsDb": -22.5,
+     "centroidHz": 1507,
+     "energyUnder220HzPct": 8,
+     "bytes": 4483,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_wood_hit_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.47,
+      "strikes": 1,
+      "centroidHz": 1521,
+      "decay20dbMs": 80
+     }
+    }
+   ]
+  },
+  "knock_metal": {
+   "files": [
+    "knock_metal_1.m4a",
+    "knock_metal_2.m4a",
+    "knock_metal_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.8,
+   "from": "oga1/metal_05.ogg; kenney-impact/impactMetal_light_002.ogg; oga2/sfx100v2_metal_06.ogg",
+   "why": "A tap on a metal tube or tap body: a clear ringing tone (metal_05, ring ~650 Hz, 0.3 s to fade 20 dB), a higher bright 'tink' (Kenney impactMetal_light_002, ring at 3.0 kHz) and a short bright clank with many modes (metal_06 of pack 2, centroid ~6 kHz). Single strikes only. Three metal characters so repeated knocks do not sound identical; standIn (not a chrome tap recording).",
+   "variants": [
+    {
+     "file": "knock_metal_1.m4a",
+     "from": "oga1/metal_05.ogg",
+     "durationS": 0.661,
+     "peakDb": -3.0,
+     "rmsDb": -22.3,
+     "activeRmsDb": -21.7,
+     "centroidHz": 597,
+     "energyUnder220HzPct": 2,
+     "bytes": 9158,
+     "sources": [
+      [
+       "oga1",
+       "metal_05.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.84,
+      "strikes": 1,
+      "centroidHz": 597,
+      "decay20dbMs": 329
+     }
+    },
+    {
+     "file": "knock_metal_2.m4a",
+     "from": "kenney-impact/impactMetal_light_002.ogg",
+     "durationS": 0.185,
+     "peakDb": -2.9,
+     "rmsDb": -21.6,
+     "activeRmsDb": -20.1,
+     "centroidHz": 2984,
+     "energyUnder220HzPct": 0,
+     "bytes": 3150,
+     "sources": [
+      [
+       "ki",
+       "impactMetal_light_002.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.23,
+      "strikes": 0,
+      "centroidHz": 3002,
+      "decay20dbMs": 65
+     }
+    },
+    {
+     "file": "knock_metal_3.m4a",
+     "from": "oga2/sfx100v2_metal_06.ogg",
+     "durationS": 0.189,
+     "peakDb": -3.5,
+     "rmsDb": -24.3,
+     "activeRmsDb": -23.0,
+     "centroidHz": 6163,
+     "energyUnder220HzPct": 0,
+     "bytes": 3404,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_metal_06.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.28,
+      "strikes": 1,
+      "centroidHz": 6183,
+      "decay20dbMs": 75
+     }
+    }
+   ]
+  },
+  "knock_paint": {
+   "files": [
+    "knock_paint_1.m4a",
+    "knock_paint_2.m4a",
+    "knock_paint_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.85,
+   "from": "oga2/sfx100v2_hit_02.ogg; oga1/hit_04.ogg; oga2/sfx100v2_misc_01.ogg",
+   "why": "The dull board: painted plasterboard answers with a short low 'dup', hardly any ring. hit_02 of pack 2 (centroid ~540 Hz, 20 dB decay in 30 ms), hit_04 of pack 1 (~740 Hz, one strike, 20 dB decay in 110 ms) and misc_01 of pack 2 (~650 Hz, one strike, 90 ms). All three are single dull impacts with a short decay and little ringing (centroids 540-740 Hz); standIn.",
+   "variants": [
+    {
+     "file": "knock_paint_1.m4a",
+     "from": "oga2/sfx100v2_hit_02.ogg",
+     "durationS": 0.158,
+     "peakDb": -2.7,
+     "rmsDb": -24.7,
+     "activeRmsDb": -23.5,
+     "centroidHz": 551,
+     "energyUnder220HzPct": 69,
+     "bytes": 3074,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_hit_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.45,
+      "strikes": 1,
+      "centroidHz": 543,
+      "decay20dbMs": 30
+     }
+    },
+    {
+     "file": "knock_paint_2.m4a",
+     "from": "oga1/hit_04.ogg",
+     "durationS": 0.381,
+     "peakDb": -2.0,
+     "rmsDb": -20.5,
+     "activeRmsDb": -19.5,
+     "centroidHz": 735,
+     "energyUnder220HzPct": 5,
+     "bytes": 5718,
+     "sources": [
+      [
+       "oga1",
+       "hit_04.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.45,
+      "strikes": 1,
+      "centroidHz": 737,
+      "decay20dbMs": 110
+     }
+    },
+    {
+     "file": "knock_paint_3.m4a",
+     "from": "oga2/sfx100v2_misc_01.ogg",
+     "durationS": 0.24,
+     "peakDb": -4.4,
+     "rmsDb": -25.6,
+     "activeRmsDb": -24.8,
+     "centroidHz": 732,
+     "energyUnder220HzPct": 16,
+     "bytes": 4034,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.26,
+      "strikes": 1,
+      "centroidHz": 646,
+      "decay20dbMs": 90
+     }
+    }
+   ]
+  },
+  "knock_ceramic": {
+   "files": [
+    "knock_ceramic_1.m4a",
+    "knock_ceramic_2.m4a",
+    "knock_ceramic_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.85,
+   "from": "oga1/glass_02.ogg; oga1/other_04.ogg; oga2/sfx100v2_misc_07.ogg",
+   "why": "A knuckle on a ceramic basin or bowl: a solid 'tock' with a brief bright ring, more ring than tile, less than glass. The packs have no ceramic-bowl knock; these are the single, ringing, mid-bright strikes: glass_02 of pack 1 (centroid 2.8 kHz, one strike with many modes), other_04 (1.3 kHz, one strike, 0.18 s decay), misc_07 of pack 2 (a 275 Hz body plus 4 kHz click, 0.18 s). standIn.",
+   "variants": [
+    {
+     "file": "knock_ceramic_1.m4a",
+     "from": "oga1/glass_02.ogg",
+     "durationS": 0.366,
+     "peakDb": -3.1,
+     "rmsDb": -23.2,
+     "activeRmsDb": -22.3,
+     "centroidHz": 2827,
+     "energyUnder220HzPct": 0,
+     "bytes": 5653,
+     "sources": [
+      [
+       "oga1",
+       "glass_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.37,
+      "strikes": 1,
+      "centroidHz": 2798,
+      "decay20dbMs": 80
+     }
+    },
+    {
+     "file": "knock_ceramic_2.m4a",
+     "from": "oga1/other_04.ogg",
+     "durationS": 0.305,
+     "peakDb": -2.7,
+     "rmsDb": -22.4,
+     "activeRmsDb": -21.8,
+     "centroidHz": 1347,
+     "energyUnder220HzPct": 0,
+     "bytes": 4882,
+     "sources": [
+      [
+       "oga1",
+       "other_04.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.31,
+      "strikes": 1,
+      "centroidHz": 1306,
+      "decay20dbMs": 185
+     }
+    },
+    {
+     "file": "knock_ceramic_3.m4a",
+     "from": "oga2/sfx100v2_misc_07.ogg",
+     "durationS": 0.147,
+     "peakDb": -3.1,
+     "rmsDb": -22.3,
+     "activeRmsDb": -21.2,
+     "centroidHz": 4138,
+     "energyUnder220HzPct": 0,
+     "bytes": 2914,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_07.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.18,
+      "strikes": 1,
+      "centroidHz": 4129,
+      "decay20dbMs": 30
+     }
+    }
+   ]
+  },
+  "door_open": {
+   "files": [
+    "door_open_1.m4a",
+    "door_open_2.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": false,
+   "gain": 0.9,
+   "from": "oga1/door_01.ogg; oga1/door_02.ogg",
+   "why": "The pack author labels these two files 'door squeak' (door_01, door_02): 2.6-2.8 s each, tonal, with the stick-slip striations of a hinge creak over a low rumble, which is the hinge sound the concept asks for as the door swings open. The only two long hinge recordings in the packs; real recordings, phone quality.",
+   "variants": [
+    {
+     "file": "door_open_1.m4a",
+     "from": "oga1/door_01.ogg",
+     "durationS": 2.531,
+     "peakDb": -3.1,
+     "rmsDb": -19.3,
+     "activeRmsDb": -19.1,
+     "centroidHz": 1222,
+     "energyUnder220HzPct": 2,
+     "bytes": 32036,
+     "sources": [
+      [
+       "oga1",
+       "door_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 2.78,
+      "strikes": 24,
+      "centroidHz": 1212,
+      "decay20dbMs": 858
+     }
+    },
+    {
+     "file": "door_open_2.m4a",
+     "from": "oga1/door_02.ogg",
+     "durationS": 2.416,
+     "peakDb": -3.0,
+     "rmsDb": -19.2,
+     "activeRmsDb": -19.0,
+     "centroidHz": 1376,
+     "energyUnder220HzPct": 0,
+     "bytes": 30562,
+     "sources": [
+      [
+       "oga1",
+       "door_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 2.64,
+      "strikes": 4,
+      "centroidHz": 1372,
+      "decay20dbMs": 534
+     }
+    }
+   ]
+  },
+  "door_close": {
+   "files": [
+    "door_close_1.m4a",
+    "door_close_2.m4a",
+    "door_close_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": false,
+   "gain": 0.95,
+   "from": "oga1/door_close_03.ogg; oga1/door_close_04.ogg; oga1/door_close_02.ogg",
+   "why": "The four pack-1 files named door_close: a low wooden-door thump (door_close_03, door_close_04: 72-78% of energy under 300 Hz, 0.4-0.5 s) and one with the thud followed by the latch click (door_close_02, click at 0.35 s). Names and the spectrogram agree. door_close_01 (pure thump) kept in reserve.",
+   "variants": [
+    {
+     "file": "door_close_1.m4a",
+     "from": "oga1/door_close_03.ogg",
+     "durationS": 0.408,
+     "peakDb": -2.6,
+     "rmsDb": -20.0,
+     "activeRmsDb": -19.1,
+     "centroidHz": 479,
+     "energyUnder220HzPct": 60,
+     "bytes": 6094,
+     "sources": [
+      [
+       "oga1",
+       "door_close_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.42,
+      "strikes": 3,
+      "centroidHz": 349,
+      "decay20dbMs": 215
+     }
+    },
+    {
+     "file": "door_close_2.m4a",
+     "from": "oga1/door_close_04.ogg",
+     "durationS": 0.336,
+     "peakDb": -3.9,
+     "rmsDb": -23.4,
+     "activeRmsDb": -22.5,
+     "centroidHz": 392,
+     "energyUnder220HzPct": 55,
+     "bytes": 5219,
+     "sources": [
+      [
+       "oga1",
+       "door_close_04.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.54,
+      "strikes": 2,
+      "centroidHz": 386,
+      "decay20dbMs": 140
+     }
+    },
+    {
+     "file": "door_close_3.m4a",
+     "from": "oga1/door_close_02.ogg",
+     "durationS": 0.739,
+     "peakDb": -4.4,
+     "rmsDb": -27.1,
+     "activeRmsDb": -26.5,
+     "centroidHz": 4191,
+     "energyUnder220HzPct": 3,
+     "bytes": 10108,
+     "sources": [
+      [
+       "oga1",
+       "door_close_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.86,
+      "strikes": 5,
+      "centroidHz": 3941,
+      "decay20dbMs": 170
+     }
+    }
+   ]
+  },
+  "door_latch": {
+   "files": [
+    "door_latch_1.m4a",
+    "door_latch_2.m4a",
+    "door_latch_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.8,
+   "from": "oga1/door_close_02.ogg[0.30-0.75 s]; oga2/sfx100v2_door_05.ogg; oga1/microwave_door_close.ogg[0.26-0.72 s]",
+   "why": "A latch bolt: two or three quick bright clicks inside 0.3 s. Cut from the clicking part of other files (nothing is labelled 'latch'): the click after the thud in door_close_02 (0.35 s into the file), the three-click door_05 of pack 2, and the latch click after the thump in microwave_door_close (0.3 s in; a spring-latch door of a different kind). standIn.",
+   "variants": [
+    {
+     "file": "door_latch_1.m4a",
+     "from": "oga1/door_close_02.ogg[0.30-0.75 s]",
+     "durationS": 0.434,
+     "peakDb": -2.9,
+     "rmsDb": -21.3,
+     "activeRmsDb": -20.8,
+     "centroidHz": 4722,
+     "energyUnder220HzPct": 1,
+     "bytes": 6400,
+     "sources": [
+      [
+       "oga1",
+       "door_close_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.86,
+      "strikes": 5,
+      "centroidHz": 3941,
+      "decay20dbMs": 170
+     }
+    },
+    {
+     "file": "door_latch_2.m4a",
+     "from": "oga2/sfx100v2_door_05.ogg",
+     "durationS": 0.278,
+     "peakDb": -3.1,
+     "rmsDb": -28.2,
+     "activeRmsDb": -27.6,
+     "centroidHz": 3906,
+     "energyUnder220HzPct": 2,
+     "bytes": 4507,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_door_05.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.31,
+      "strikes": 3,
+      "centroidHz": 3817,
+      "decay20dbMs": 40
+     }
+    },
+    {
+     "file": "door_latch_3.m4a",
+     "from": "oga1/microwave_door_close.ogg[0.26-0.72 s]",
+     "durationS": 0.4,
+     "peakDb": -3.4,
+     "rmsDb": -26.1,
+     "activeRmsDb": -25.5,
+     "centroidHz": 2363,
+     "energyUnder220HzPct": 16,
+     "bytes": 5987,
+     "sources": [
+      [
+       "oga1",
+       "microwave_door_close.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.72,
+      "strikes": 2,
+      "centroidHz": 3446,
+      "decay20dbMs": 130
+     }
+    }
+   ]
+  },
+  "flush_small": {
+   "files": [
+    "flush_small_1.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": false,
+   "gain": 0.8,
+   "from": "oga1/toilet_02.ogg",
+   "why": "toilet_02 of pack 1 ('toilet flushing' in the author's list): 4.1 s, broadband water rush with a swirl that builds over the first second, centroid ~3 kHz: the shorter, thinner flush, used for the small button. Real recording, phone quality.",
+   "variants": [
+    {
+     "file": "flush_small_1.m4a",
+     "from": "oga1/toilet_02.ogg",
+     "durationS": 3.973,
+     "peakDb": -3.1,
+     "rmsDb": -25.9,
+     "activeRmsDb": -25.6,
+     "centroidHz": 3081,
+     "energyUnder220HzPct": 1,
+     "bytes": 49424,
+     "sources": [
+      [
+       "oga1",
+       "toilet_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 4.12,
+      "strikes": 13,
+      "centroidHz": 3086,
+      "decay20dbMs": 1422
+     }
+    }
+   ]
+  },
+  "flush_large": {
+   "files": [
+    "flush_large_1.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": false,
+   "gain": 0.85,
+   "from": "oga1/toilet_01.ogg",
+   "why": "toilet_01 of pack 1 (the other 'toilet flushing' file): 7.0 s, heavier and lower (peak ~350 Hz, centroid ~2.2 kHz), a big onset and a long tail: used for the large button. Real recording, phone quality.",
+   "variants": [
+    {
+     "file": "flush_large_1.m4a",
+     "from": "oga1/toilet_01.ogg",
+     "durationS": 6.836,
+     "peakDb": -2.9,
+     "rmsDb": -25.6,
+     "activeRmsDb": -24.9,
+     "centroidHz": 2179,
+     "energyUnder220HzPct": 2,
+     "bytes": 84259,
+     "sources": [
+      [
+       "oga1",
+       "toilet_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 7.02,
+      "strikes": 31,
+      "centroidHz": 2168,
+      "decay20dbMs": 1761
+     }
+    }
+   ]
+  },
+  "cistern_refill": {
+   "files": [
+    "cistern_refill_1.m4a",
+    "cistern_refill_2.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.55,
+   "from": "synthesised by scripts/assets_synth.py: cistern_refill(seed=2, dur=7.0); synthesised by scripts/assets_synth.py: cistern_refill(seed=13, dur=5.5)",
+   "why": "No recording of a cistern refill in the packs, so it is built from the physics of one: valve hiss (noise, 1.4-7.5 kHz) with a slow wobble, the resonance of the tank rising from 230 to 680 Hz as it fills, a few early gurgles, and a small plastic clunk just before the hiss stops when the float valve closes. About 7 s (and a shorter 5.5 s take). Synthesised stand-in.",
+   "variants": [
+    {
+     "file": "cistern_refill_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: cistern_refill(seed=2, dur=7.0)",
+     "durationS": 7.0,
+     "peakDb": -2.9,
+     "rmsDb": -17.1,
+     "activeRmsDb": -17.1,
+     "centroidHz": 3271,
+     "energyUnder220HzPct": 0,
+     "bytes": 86611,
+     "sources": []
+    },
+    {
+     "file": "cistern_refill_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: cistern_refill(seed=13, dur=5.5)",
+     "durationS": 5.5,
+     "peakDb": -2.9,
+     "rmsDb": -17.4,
+     "activeRmsDb": -17.4,
+     "centroidHz": 3735,
+     "energyUnder220HzPct": 0,
+     "bytes": 68050,
+     "sources": []
+    }
+   ]
+  },
+  "seat_click": {
+   "files": [
+    "seat_click_1.m4a",
+    "seat_click_2.m4a",
+    "seat_click_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.6,
+   "from": "kenney-interface/click_001.ogg; kenney-interface/toggle_001.ogg; kenney-interface/toggle_002.ogg",
+   "why": "The small plastic click of a seat meeting its hinge stop. Nothing in the packs is a toilet seat, so these are the three cleanest short mechanical clicks of Kenney's interface set with a little body: click_001 (0.1 s, centroid 1.7 kHz, a short ring decay), toggle_001 and toggle_002 (0.14 s, 2.5-2.9 kHz). standIn.",
+   "variants": [
+    {
+     "file": "seat_click_1.m4a",
+     "from": "kenney-interface/click_001.ogg",
+     "durationS": 0.05,
+     "peakDb": -3.2,
+     "rmsDb": -21.9,
+     "activeRmsDb": -19.7,
+     "centroidHz": 1452,
+     "energyUnder220HzPct": 22,
+     "bytes": 1788,
+     "sources": [
+      [
+       "kf",
+       "click_001.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.1,
+      "strikes": 0,
+      "centroidHz": 1726,
+      "decay20dbMs": 10
+     }
+    },
+    {
+     "file": "seat_click_2.m4a",
+     "from": "kenney-interface/toggle_001.ogg",
+     "durationS": 0.118,
+     "peakDb": -2.5,
+     "rmsDb": -15.8,
+     "activeRmsDb": -15.0,
+     "centroidHz": 2496,
+     "energyUnder220HzPct": 0,
+     "bytes": 2686,
+     "sources": [
+      [
+       "kf",
+       "toggle_001.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.14,
+      "strikes": 0,
+      "centroidHz": 2470,
+      "decay20dbMs": 80
+     }
+    },
+    {
+     "file": "seat_click_3.m4a",
+     "from": "kenney-interface/toggle_002.ogg",
+     "durationS": 0.117,
+     "peakDb": -2.9,
+     "rmsDb": -13.8,
+     "activeRmsDb": -13.1,
+     "centroidHz": 2851,
+     "energyUnder220HzPct": 0,
+     "bytes": 2666,
+     "sources": [
+      [
+       "kf",
+       "toggle_002.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.14,
+      "strikes": 0,
+      "centroidHz": 2855,
+      "decay20dbMs": 70
+     }
+    }
+   ]
+  },
+  "lid_soft_close": {
+   "files": [
+    "lid_soft_close_1.m4a",
+    "lid_soft_close_2.m4a",
+    "lid_soft_close_3.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.45,
+   "from": "synthesised by scripts/assets_synth.py: soft_tok(seed=31, f0=380.0, tau=0.032); synthesised by scripts/assets_synth.py: soft_tok(seed=32, f0=450.0, tau=0.028); synthesised by scripts/assets_synth.py: soft_tok(seed=33, f0=520.0, tau=0.025)",
+   "why": "A soft-close lid settles with a gentle 'tok'. The only soft-impact recordings in the packs (Kenney impactSoft, impactPlate) hold all their energy under 150-300 Hz, which a phone speaker cannot play, so they would be silent on the target device. Synthesised instead: a damped plastic-on-porcelain tok (three modes around 380-520 Hz, 2.6x and 5.9x above) with a soft contact noise, 0.22 s, mid-pitched on purpose. Three variants at different pitches. Stand-in.",
+   "variants": [
+    {
+     "file": "lid_soft_close_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: soft_tok(seed=31, f0=380.0, tau=0.032)",
+     "durationS": 0.22,
+     "peakDb": -1.5,
+     "rmsDb": -17.9,
+     "activeRmsDb": -16.7,
+     "centroidHz": 390,
+     "energyUnder220HzPct": 0,
+     "bytes": 2796,
+     "sources": []
+    },
+    {
+     "file": "lid_soft_close_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: soft_tok(seed=32, f0=450.0, tau=0.028)",
+     "durationS": 0.22,
+     "peakDb": -3.0,
+     "rmsDb": -21.0,
+     "activeRmsDb": -19.3,
+     "centroidHz": 470,
+     "energyUnder220HzPct": 0,
+     "bytes": 2492,
+     "sources": []
+    },
+    {
+     "file": "lid_soft_close_3.m4a",
+     "from": "synthesised by scripts/assets_synth.py: soft_tok(seed=33, f0=520.0, tau=0.025)",
+     "durationS": 0.22,
+     "peakDb": -3.0,
+     "rmsDb": -20.6,
+     "activeRmsDb": -18.4,
+     "centroidHz": 525,
+     "energyUnder220HzPct": 0,
+     "bytes": 2548,
+     "sources": []
+    }
+   ]
+  },
+  "lid_slam": {
+   "files": [
+    "lid_slam_1.m4a",
+    "lid_slam_2.m4a",
+    "lid_slam_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 1.0,
+   "from": "oga1/slam_05.ogg; oga1/slam_01.ogg; oga1/slam_03.ogg",
+   "why": "A loud, ordinary lid dropped onto the bowl for the slam test. Slam files of pack 1: slam_05 (0.36 s, thump plus bright clack, centroid 3.5 kHz), slam_01 (0.47 s, thump and clack, 1.5 kHz) and slam_03 (0.56 s, a lower slam with several bounces, 28% of its energy at 300-1000 Hz and 16% at 1-3 kHz). The three with the most energy a phone speaker can play; the heavier slam files (04, 06, 07) are mostly under 300 Hz. Real impacts, but of unknown objects; standIn.",
+   "variants": [
+    {
+     "file": "lid_slam_1.m4a",
+     "from": "oga1/slam_05.ogg",
+     "durationS": 0.304,
+     "peakDb": -3.0,
+     "rmsDb": -24.3,
+     "activeRmsDb": -23.5,
+     "centroidHz": 3732,
+     "energyUnder220HzPct": 10,
+     "bytes": 4938,
+     "sources": [
+      [
+       "oga1",
+       "slam_05.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.36,
+      "strikes": 3,
+      "centroidHz": 3539,
+      "decay20dbMs": 120
+     }
+    },
+    {
+     "file": "lid_slam_2.m4a",
+     "from": "oga1/slam_01.ogg",
+     "durationS": 0.474,
+     "peakDb": -3.4,
+     "rmsDb": -25.0,
+     "activeRmsDb": -24.3,
+     "centroidHz": 1834,
+     "energyUnder220HzPct": 29,
+     "bytes": 6814,
+     "sources": [
+      [
+       "oga1",
+       "slam_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.47,
+      "strikes": 3,
+      "centroidHz": 1528,
+      "decay20dbMs": 205
+     }
+    },
+    {
+     "file": "lid_slam_3.m4a",
+     "from": "oga1/slam_03.ogg",
+     "durationS": 0.494,
+     "peakDb": -4.4,
+     "rmsDb": -20.4,
+     "activeRmsDb": -19.8,
+     "centroidHz": 639,
+     "energyUnder220HzPct": 35,
+     "bytes": 7092,
+     "sources": [
+      [
+       "oga1",
+       "slam_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.56,
+      "strikes": 3,
+      "centroidHz": 526,
+      "decay20dbMs": 309
+     }
+    }
+   ]
+  },
+  "button_press": {
+   "files": [
+    "button_press_1.m4a",
+    "button_press_2.m4a",
+    "button_press_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.7,
+   "from": "oga1/switch_01.ogg; oga1/switch_02.ogg; kenney-interface/select_002.ogg",
+   "why": "The flush plate's push button: a short mechanical 'klack' with a low body. switch_01 and switch_02 of pack 1 (0.23 s and 0.46 s, tonal body at 570-680 Hz plus a click) are duller than the light-switch picks, which keeps the two sounds apart; Kenney select_002 (0.04 s, 1.2 kHz) is the quick-tap variant. standIn.",
+   "variants": [
+    {
+     "file": "button_press_1.m4a",
+     "from": "oga1/switch_01.ogg",
+     "durationS": 0.153,
+     "peakDb": -3.1,
+     "rmsDb": -27.1,
+     "activeRmsDb": -26.0,
+     "centroidHz": 1310,
+     "energyUnder220HzPct": 0,
+     "bytes": 2999,
+     "sources": [
+      [
+       "oga1",
+       "switch_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.23,
+      "strikes": 1,
+      "centroidHz": 1425,
+      "decay20dbMs": 20
+     }
+    },
+    {
+     "file": "button_press_2.m4a",
+     "from": "oga1/switch_02.ogg",
+     "durationS": 0.221,
+     "peakDb": -1.7,
+     "rmsDb": -25.0,
+     "activeRmsDb": -24.1,
+     "centroidHz": 1366,
+     "energyUnder220HzPct": 0,
+     "bytes": 3906,
+     "sources": [
+      [
+       "oga1",
+       "switch_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.46,
+      "strikes": 1,
+      "centroidHz": 1608,
+      "decay20dbMs": 40
+     }
+    },
+    {
+     "file": "button_press_3.m4a",
+     "from": "kenney-interface/select_002.ogg",
+     "durationS": 0.04,
+     "peakDb": -3.1,
+     "rmsDb": -17.9,
+     "activeRmsDb": -17.2,
+     "centroidHz": 1122,
+     "energyUnder220HzPct": 0,
+     "bytes": 1603,
+     "sources": [
+      [
+       "kf",
+       "select_002.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.04,
+      "strikes": 0,
+      "centroidHz": 1232,
+      "decay20dbMs": 15
+     }
+    }
+   ]
+  },
+  "roll_spin": {
+   "files": [
+    "roll_spin_1.m4a",
+    "roll_spin_2.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.5,
+   "from": "synthesised by scripts/assets_synth.py: roll_spin(seed=11, dur=2.0, rev0=9.0); synthesised by scripts/assets_synth.py: roll_spin(seed=21, dur=1.5, rev0=7.0)",
+   "why": "No recording of a toilet roll turning. Synthesised: soft paper/cardboard friction noise and a flutter whose level follows the spin speed (slowing down exponentially), plus one low thump per turn from the tube seam that comes slower and slower. 2.0 s fast spin and 1.5 s slow spin. Stand-in.",
+   "variants": [
+    {
+     "file": "roll_spin_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: roll_spin(seed=11, dur=2.0, rev0=9.0)",
+     "durationS": 2.0,
+     "peakDb": -3.2,
+     "rmsDb": -25.2,
+     "activeRmsDb": -25.1,
+     "centroidHz": 1382,
+     "energyUnder220HzPct": 3,
+     "bytes": 25436,
+     "sources": []
+    },
+    {
+     "file": "roll_spin_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: roll_spin(seed=21, dur=1.5, rev0=7.0)",
+     "durationS": 1.5,
+     "peakDb": -2.9,
+     "rmsDb": -23.8,
+     "activeRmsDb": -23.7,
+     "centroidHz": 1539,
+     "energyUnder220HzPct": 3,
+     "bytes": 19475,
+     "sources": []
+    }
+   ]
+  },
+  "paper_tear": {
+   "files": [
+    "paper_tear_1.m4a",
+    "paper_tear_2.m4a",
+    "paper_tear_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.65,
+   "from": "oga1/paper_03.ogg; oga1/paper_04.ogg; oga2/sfx100v2_misc_10.ogg[0.00-0.85 s]",
+   "why": "Tearing along a perforation is noisy, bright and ticks rapidly. Pack 1 paper_03 and paper_04 (0.55 s and 0.61 s, centroid 5.9 kHz, 7 and 6 amplitude bursts: rip-like) and misc_10 of pack 2 (a regular train of short bursts over about 0.65 s, cut to 0.85 s: the perforation clicking open). The only paper-labelled files are quiet phone recordings, hence the gain-up on normalising. standIn (identity of misc_10 is by spectrogram shape only).",
+   "variants": [
+    {
+     "file": "paper_tear_1.m4a",
+     "from": "oga1/paper_03.ogg",
+     "durationS": 0.533,
+     "peakDb": -2.7,
+     "rmsDb": -22.1,
+     "activeRmsDb": -21.9,
+     "centroidHz": 5925,
+     "energyUnder220HzPct": 0,
+     "bytes": 7645,
+     "sources": [
+      [
+       "oga1",
+       "paper_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.55,
+      "strikes": 7,
+      "centroidHz": 5927,
+      "decay20dbMs": 85
+     }
+    },
+    {
+     "file": "paper_tear_2.m4a",
+     "from": "oga1/paper_04.ogg",
+     "durationS": 0.581,
+     "peakDb": -3.9,
+     "rmsDb": -23.9,
+     "activeRmsDb": -23.8,
+     "centroidHz": 5853,
+     "energyUnder220HzPct": 0,
+     "bytes": 8288,
+     "sources": [
+      [
+       "oga1",
+       "paper_04.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.61,
+      "strikes": 6,
+      "centroidHz": 5854,
+      "decay20dbMs": 95
+     }
+    },
+    {
+     "file": "paper_tear_3.m4a",
+     "from": "oga2/sfx100v2_misc_10.ogg[0.00-0.85 s]",
+     "durationS": 0.468,
+     "peakDb": -3.5,
+     "rmsDb": -27.6,
+     "activeRmsDb": -27.1,
+     "centroidHz": 5638,
+     "energyUnder220HzPct": 3,
+     "bytes": 6972,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_10.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 1.06,
+      "strikes": 6,
+      "centroidHz": 5619,
+      "decay20dbMs": 75
+     }
+    }
+   ]
+  },
+  "paper_rustle": {
+   "files": [
+    "paper_rustle_1.m4a",
+    "paper_rustle_2.m4a",
+    "paper_rustle_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.6,
+   "from": "oga1/paper_01.ogg; oga2/sfx100v2_misc_03.ogg; oga2/sfx100v2_misc_09.ogg",
+   "why": "Crumpling and rustling: random crackle with many short bursts, no steady noise. paper_01 of pack 1 (0.42 s, 8 bursts), misc_03 of pack 2 (0.93 s, crackle, 4 stronger events) and misc_09 (0.67 s, noisy bursts, flatness 0.17). standIn.",
+   "variants": [
+    {
+     "file": "paper_rustle_1.m4a",
+     "from": "oga1/paper_01.ogg",
+     "durationS": 0.421,
+     "peakDb": -3.3,
+     "rmsDb": -25.9,
+     "activeRmsDb": -25.8,
+     "centroidHz": 4127,
+     "energyUnder220HzPct": 1,
+     "bytes": 6314,
+     "sources": [
+      [
+       "oga1",
+       "paper_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.42,
+      "strikes": 8,
+      "centroidHz": 4133,
+      "decay20dbMs": 35
+     }
+    },
+    {
+     "file": "paper_rustle_2.m4a",
+     "from": "oga2/sfx100v2_misc_03.ogg",
+     "durationS": 0.724,
+     "peakDb": -3.4,
+     "rmsDb": -28.9,
+     "activeRmsDb": -28.4,
+     "centroidHz": 5119,
+     "energyUnder220HzPct": 2,
+     "bytes": 10026,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.93,
+      "strikes": 4,
+      "centroidHz": 5129,
+      "decay20dbMs": 120
+     }
+    },
+    {
+     "file": "paper_rustle_3.m4a",
+     "from": "oga2/sfx100v2_misc_09.ogg",
+     "durationS": 0.469,
+     "peakDb": -3.3,
+     "rmsDb": -26.9,
+     "activeRmsDb": -26.4,
+     "centroidHz": 5627,
+     "energyUnder220HzPct": 2,
+     "bytes": 6961,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_09.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.67,
+      "strikes": 6,
+      "centroidHz": 5734,
+      "decay20dbMs": 70
+     }
+    }
+   ]
+  },
+  "paper_slide": {
+   "files": [
+    "paper_slide_1.m4a",
+    "paper_slide_2.m4a",
+    "paper_slide_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.6,
+   "from": "oga1/paper_02.ogg; oga2/sfx100v2_misc_02.ogg; oga2/sfx100v2_misc_05.ogg",
+   "why": "A sheet sliding over a surface: smooth broadband 'frrt' without bursts. paper_02 of pack 1 (0.55 s, smooth, centroid 2.6 kHz) and two single-event steady noises of pack 2 (misc_02: 0.81 s, misc_05: 0.54 s, both with one soft onset and a flat plateau). standIn.",
+   "variants": [
+    {
+     "file": "paper_slide_1.m4a",
+     "from": "oga1/paper_02.ogg",
+     "durationS": 0.548,
+     "peakDb": -3.2,
+     "rmsDb": -23.0,
+     "activeRmsDb": -22.9,
+     "centroidHz": 2565,
+     "energyUnder220HzPct": 6,
+     "bytes": 7787,
+     "sources": [
+      [
+       "oga1",
+       "paper_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.55,
+      "strikes": 4,
+      "centroidHz": 2576,
+      "decay20dbMs": 269
+     }
+    },
+    {
+     "file": "paper_slide_2.m4a",
+     "from": "oga2/sfx100v2_misc_02.ogg",
+     "durationS": 0.721,
+     "peakDb": -3.1,
+     "rmsDb": -20.5,
+     "activeRmsDb": -20.2,
+     "centroidHz": 5646,
+     "energyUnder220HzPct": 0,
+     "bytes": 9882,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.81,
+      "strikes": 1,
+      "centroidHz": 5640,
+      "decay20dbMs": 249
+     }
+    },
+    {
+     "file": "paper_slide_3.m4a",
+     "from": "oga2/sfx100v2_misc_05.ogg",
+     "durationS": 0.391,
+     "peakDb": -3.0,
+     "rmsDb": -22.0,
+     "activeRmsDb": -21.4,
+     "centroidHz": 6757,
+     "energyUnder220HzPct": 0,
+     "bytes": 5955,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_misc_05.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.54,
+      "strikes": 1,
+      "centroidHz": 6754,
+      "decay20dbMs": 215
+     }
+    }
+   ]
+  },
+  "drip": {
+   "files": [
+    "drip_1.m4a",
+    "drip_2.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": false,
+   "gain": 0.55,
+   "from": "oga1/plop_02.ogg; oga1/plop_01.ogg",
+   "why": "The pack author labels plop_01 and plop_02 'plop sound': water plops. plop_02 (0.36 s) is a single drop impact with a short decay; plop_01 (0.30 s) is a small bubbly pop. Both are short. Real recordings, phone quality.",
+   "variants": [
+    {
+     "file": "drip_1.m4a",
+     "from": "oga1/plop_02.ogg",
+     "durationS": 0.147,
+     "peakDb": -2.9,
+     "rmsDb": -23.7,
+     "activeRmsDb": -22.4,
+     "centroidHz": 972,
+     "energyUnder220HzPct": 1,
+     "bytes": 2905,
+     "sources": [
+      [
+       "oga1",
+       "plop_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.36,
+      "strikes": 2,
+      "centroidHz": 1043,
+      "decay20dbMs": 35
+     }
+    },
+    {
+     "file": "drip_2.m4a",
+     "from": "oga1/plop_01.ogg",
+     "durationS": 0.23,
+     "peakDb": -3.0,
+     "rmsDb": -29.6,
+     "activeRmsDb": -27.3,
+     "centroidHz": 1587,
+     "energyUnder220HzPct": 0,
+     "bytes": 4057,
+     "sources": [
+      [
+       "oga1",
+       "plop_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.3,
+      "strikes": 1,
+      "centroidHz": 1596,
+      "decay20dbMs": 10
+     }
+    }
+   ]
+  },
+  "drain_gurgle": {
+   "files": [
+    "drain_gurgle_1.m4a",
+    "drain_gurgle_2.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.6,
+   "from": "synthesised by scripts/assets_synth.py: drain_gurgle(seed=3, dur=2.4); synthesised by scripts/assets_synth.py: drain_gurgle(seed=5, dur=2.9, rate0=12, rate1=2.0, f_lo=280, f_hi=1000)",
+   "why": "No gurgle in the packs. Synthesised from the physics of bubbles: each bubble is a decaying tone (Minnaert resonance, 320-1250 Hz) that rises slightly in pitch as it settles, with big slow 'glugs' (180-300 Hz) and a wet low-passed bed; the bubble rate thins out as the basin empties. 2.4 s and 2.9 s takes. Stand-in.",
+   "variants": [
+    {
+     "file": "drain_gurgle_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: drain_gurgle(seed=3, dur=2.4)",
+     "durationS": 2.4,
+     "peakDb": -3.0,
+     "rmsDb": -22.7,
+     "activeRmsDb": -22.7,
+     "centroidHz": 396,
+     "energyUnder220HzPct": 14,
+     "bytes": 30521,
+     "sources": []
+    },
+    {
+     "file": "drain_gurgle_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: drain_gurgle(seed=5, dur=2.9, rate0=12, rate1=2.0, f_lo=280, f_hi=1000)",
+     "durationS": 2.9,
+     "peakDb": -3.0,
+     "rmsDb": -21.1,
+     "activeRmsDb": -21.0,
+     "centroidHz": 445,
+     "energyUnder220HzPct": 12,
+     "bytes": 36463,
+     "sources": []
+    }
+   ]
+  },
+  "tap_running": {
+   "files": [
+    "tap_running_1.m4a",
+    "tap_running_2.m4a"
+   ],
+   "loop": true,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.24,
+   "from": "oga2/sfx100v2_loop_water_02.ogg; oga2/sfx100v2_loop_water_01.ogg",
+   "why": "Steady running water from pack 2: loop_water_02 (8.7 s, centroid 1.4 kHz, splashy bursts) and loop_water_01 (6.4 s, smooth, 1.2 kHz). Both are labelled loops by the pack author and show the continuous broadband texture of water hitting a surface. A 0.45 s equal-power crossfade at the join guarantees a click-free loop. Not an actual tap into a basin; standIn.",
+   "variants": [
+    {
+     "file": "tap_running_1.m4a",
+     "from": "oga2/sfx100v2_loop_water_02.ogg",
+     "durationS": 8.28,
+     "peakDb": -3.1,
+     "rmsDb": -20.4,
+     "activeRmsDb": -20.4,
+     "centroidHz": 1360,
+     "energyUnder220HzPct": 19,
+     "bytes": 102153,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_loop_water_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 8.73,
+      "strikes": 21,
+      "centroidHz": 1361,
+      "decay20dbMs": null
+     },
+     "seam": {
+      "joinStepRatio": 2.34,
+      "edgeLevelDiffDb": 0.36,
+      "edgeSpecDiffDb": 4.68
+     },
+     "loopStart": 0.0,
+     "loopEnd": 8.28
+    },
+    {
+     "file": "tap_running_2.m4a",
+     "from": "oga2/sfx100v2_loop_water_01.ogg",
+     "durationS": 5.91,
+     "peakDb": -3.0,
+     "rmsDb": -16.8,
+     "activeRmsDb": -16.8,
+     "centroidHz": 1251,
+     "energyUnder220HzPct": 17,
+     "bytes": 73291,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_loop_water_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 6.37,
+      "strikes": 7,
+      "centroidHz": 1249,
+      "decay20dbMs": null
+     },
+     "seam": {
+      "joinStepRatio": 0.21,
+      "edgeLevelDiffDb": 0.21,
+      "edgeSpecDiffDb": 3.59
+     },
+     "loopStart": 0.0,
+     "loopEnd": 5.91
+    }
+   ],
+   "loopSeconds": 7.09,
+   "loopNote": "set source.loop = true and source.loopStart / loopEnd to the values of the file you play (exact, in seconds); the join is crossfaded (equal power, 0.45 s) so it cannot click"
+  },
+  "basin_fill": {
+   "files": [
+    "basin_fill_1.m4a",
+    "basin_fill_2.m4a"
+   ],
+   "loop": true,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.363,
+   "from": "oga2/sfx100v2_loop_water_03.ogg; oga2/sfx100v2_loop_water_01.ogg + oga2/sfx100v2_loop_water_01.ogg",
+   "why": "The fuller sound of a basin with water in it: loop_water_03 of pack 2 (9.7 s, the deepest of the three water loops: 44% of its energy under 300 Hz). The second variant is loop_water_01 with its low band lifted 6 dB for body. The app raises the pitch (playbackRate) as the basin fills; the file itself is a constant loop. standIn.",
+   "variants": [
+    {
+     "file": "basin_fill_1.m4a",
+     "from": "oga2/sfx100v2_loop_water_03.ogg",
+     "durationS": 9.25,
+     "peakDb": -2.9,
+     "rmsDb": -25.3,
+     "activeRmsDb": -25.3,
+     "centroidHz": 1127,
+     "energyUnder220HzPct": 30,
+     "bytes": 113902,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_loop_water_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 9.71,
+      "strikes": 20,
+      "centroidHz": 1132,
+      "decay20dbMs": 344
+     },
+     "seam": {
+      "joinStepRatio": 2.01,
+      "edgeLevelDiffDb": -4.08,
+      "edgeSpecDiffDb": 5.4
+     },
+     "loopStart": 0.0,
+     "loopEnd": 9.25
+    },
+    {
+     "file": "basin_fill_2.m4a",
+     "from": "oga2/sfx100v2_loop_water_01.ogg + oga2/sfx100v2_loop_water_01.ogg",
+     "durationS": 5.91,
+     "peakDb": -2.9,
+     "rmsDb": -17.1,
+     "activeRmsDb": -17.1,
+     "centroidHz": 317,
+     "energyUnder220HzPct": 42,
+     "bytes": 73331,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_loop_water_01.ogg"
+      ],
+      [
+       "oga2",
+       "sfx100v2_loop_water_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 6.37,
+      "strikes": 7,
+      "centroidHz": 1249,
+      "decay20dbMs": null
+     },
+     "seam": {
+      "joinStepRatio": 1.98,
+      "edgeLevelDiffDb": 0.63,
+      "edgeSpecDiffDb": 3.91
+     },
+     "loopStart": 0.0,
+     "loopEnd": 5.91
+    }
+   ],
+   "loopSeconds": 7.58,
+   "loopNote": "set source.loop = true and source.loopStart / loopEnd to the values of the file you play (exact, in seconds); the join is crossfaded (equal power, 0.45 s) so it cannot click"
+  },
+  "shower_spray": {
+   "files": [
+    "shower_spray_1.m4a",
+    "shower_spray_2.m4a"
+   ],
+   "loop": true,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.385,
+   "from": "oga2/sfx100v2_loop_ambient_01.ogg; oga2/sfx100v2_loop_ambient_01.ogg + oga2/sfx100v2_loop_water_03.ogg",
+   "why": "Water spraying on tile and glass is broadband hiss with most energy at 3-8 kHz. loop_ambient_01 of pack 2 (10.1 s) is the only loop of that kind: 72% of its energy above 3 kHz, 20% above 8 kHz, noisy (flatness 0.23), with many small transients. Its identity is by spectrogram only, so standIn. Variant 2 adds some body from the deep water loop (loop_water_03 low-passed at 1.5 kHz).",
+   "variants": [
+    {
+     "file": "shower_spray_1.m4a",
+     "from": "oga2/sfx100v2_loop_ambient_01.ogg",
+     "durationS": 9.58,
+     "peakDb": -3.2,
+     "rmsDb": -19.7,
+     "activeRmsDb": -19.7,
+     "centroidHz": 5051,
+     "energyUnder220HzPct": 5,
+     "bytes": 118042,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_loop_ambient_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 10.09,
+      "strikes": 0,
+      "centroidHz": 4950,
+      "decay20dbMs": null
+     },
+     "seam": {
+      "joinStepRatio": 0.42,
+      "edgeLevelDiffDb": 3.09,
+      "edgeSpecDiffDb": 4.59
+     },
+     "loopStart": 0.0,
+     "loopEnd": 9.58
+    },
+    {
+     "file": "shower_spray_2.m4a",
+     "from": "oga2/sfx100v2_loop_ambient_01.ogg + oga2/sfx100v2_loop_water_03.ogg",
+     "durationS": 9.2,
+     "peakDb": -3.7,
+     "rmsDb": -19.7,
+     "activeRmsDb": -19.7,
+     "centroidHz": 4483,
+     "energyUnder220HzPct": 9,
+     "bytes": 113493,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_loop_ambient_01.ogg"
+      ],
+      [
+       "oga2",
+       "sfx100v2_loop_water_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 10.09,
+      "strikes": 0,
+      "centroidHz": 4950,
+      "decay20dbMs": null
+     },
+     "seam": {
+      "joinStepRatio": 0.79,
+      "edgeLevelDiffDb": -1.01,
+      "edgeSpecDiffDb": 4.32
+     },
+     "loopStart": 0.0,
+     "loopEnd": 9.2
+    }
+   ],
+   "loopSeconds": 9.39,
+   "loopNote": "set source.loop = true and source.loopStart / loopEnd to the values of the file you play (exact, in seconds); the join is crossfaded (equal power, 0.50 s) so it cannot click"
+  },
+  "rain_window": {
+   "files": [
+    "rain_window_1.m4a"
+   ],
+   "loop": true,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.182,
+   "from": "synthesised by scripts/assets_synth.py: rain_window_loop(seed=4, dur=12.0)",
+   "why": "Rain heard from inside: single drops ticking on a glass pane (about 45 per second with gusts, each a short two-mode glass tick, plus a few heavier drops) over a soft bed, all rolled off above 9 kHz as through a window. Synthesised and built mathematically periodic, so the loop has no seam. Stand-in.",
+   "variants": [
+    {
+     "file": "rain_window_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: rain_window_loop(seed=4, dur=12.0)",
+     "durationS": 12.0,
+     "peakDb": -3.3,
+     "rmsDb": -21.2,
+     "activeRmsDb": -21.2,
+     "centroidHz": 2001,
+     "energyUnder220HzPct": 2,
+     "bytes": 147418,
+     "sources": [],
+     "seam": {
+      "joinStepRatio": 0.47,
+      "edgeLevelDiffDb": -0.95,
+      "edgeSpecDiffDb": 3.75
+     },
+     "loopStart": 0.0,
+     "loopEnd": 12.0
+    }
+   ],
+   "loopSeconds": 12.0,
+   "loopNote": "set source.loop = true and source.loopStart / loopEnd to the values of the file you play (exact, in seconds); the join is mathematically periodic (no crossfade needed)"
+  },
+  "room_tone": {
+   "files": [
+    "room_tone_1.m4a"
+   ],
+   "loop": true,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.021,
+   "from": "synthesised by scripts/assets_synth.py: room_tone_loop(seed=8, dur=10.0)",
+   "why": "The very quiet tone of a tiled room with a fan duct somewhere: low rumble, soft broadband air and the faintest high hiss, with a slow +/- 0.7 dB wobble. Synthesised, periodic (no seam). Meant to be played far below the other sounds.",
+   "variants": [
+    {
+     "file": "room_tone_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: room_tone_loop(seed=8, dur=10.0)",
+     "durationS": 10.0,
+     "peakDb": -3.5,
+     "rmsDb": -16.5,
+     "activeRmsDb": -16.5,
+     "centroidHz": 716,
+     "energyUnder220HzPct": 58,
+     "bytes": 123063,
+     "sources": [],
+     "seam": {
+      "joinStepRatio": 0.8,
+      "edgeLevelDiffDb": 0.69,
+      "edgeSpecDiffDb": 3.38
+     },
+     "loopStart": 0.0,
+     "loopEnd": 10.0
+    }
+   ],
+   "loopSeconds": 10.0,
+   "loopNote": "set source.loop = true and source.loopStart / loopEnd to the values of the file you play (exact, in seconds); the join is mathematically periodic (no crossfade needed)"
+  },
+  "fan_hum": {
+   "files": [
+    "fan_hum_1.m4a"
+   ],
+   "loop": true,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.043,
+   "from": "synthesised by scripts/assets_synth.py: fan_hum_loop(seed=6, dur=8.0)",
+   "why": "A bathroom extractor fan: mains-motor hum at 100 Hz with 8 harmonics, a faint blade whine near 280 Hz with a slow wobble, and soft moving air (180 Hz-3.8 kHz). Every tone has a whole number of cycles in the 8 s loop. Synthesised; the packs hold only unidentified machine drones. Stand-in.",
+   "variants": [
+    {
+     "file": "fan_hum_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: fan_hum_loop(seed=6, dur=8.0)",
+     "durationS": 8.0,
+     "peakDb": -3.3,
+     "rmsDb": -14.7,
+     "activeRmsDb": -14.7,
+     "centroidHz": 763,
+     "energyUnder220HzPct": 60,
+     "bytes": 98712,
+     "sources": [],
+     "seam": {
+      "joinStepRatio": 0.22,
+      "edgeLevelDiffDb": 0.03,
+      "edgeSpecDiffDb": 3.27
+     },
+     "loopStart": 0.0,
+     "loopEnd": 8.0
+    }
+   ],
+   "loopSeconds": 8.0,
+   "loopNote": "set source.loop = true and source.loopStart / loopEnd to the values of the file you play (exact, in seconds); the join is mathematically periodic (no crossfade needed)"
+  },
+  "footstep_wet": {
+   "files": [
+    "footstep_wet_1.m4a",
+    "footstep_wet_2.m4a",
+    "footstep_wet_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": false,
+   "gain": 0.5,
+   "from": "oga2/sfx100v2_footstep_wet_01.ogg; oga2/sfx100v2_footstep_wet_02.ogg; oga2/sfx100v2_footstep_wet_03.ogg",
+   "why": "The pack author labels three files footstep_wet (pack 2): 0.28-0.40 s wet slaps with a bright 2-5 kHz splash content. Quiet recordings (peaks -13 to -9 dBFS), hence the level-up on normalising. Real recordings, three different steps.",
+   "variants": [
+    {
+     "file": "footstep_wet_1.m4a",
+     "from": "oga2/sfx100v2_footstep_wet_01.ogg",
+     "durationS": 0.259,
+     "peakDb": -3.4,
+     "rmsDb": -23.9,
+     "activeRmsDb": -23.6,
+     "centroidHz": 4732,
+     "energyUnder220HzPct": 0,
+     "bytes": 4281,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_footstep_wet_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.28,
+      "strikes": 2,
+      "centroidHz": 4740,
+      "decay20dbMs": 150
+     }
+    },
+    {
+     "file": "footstep_wet_2.m4a",
+     "from": "oga2/sfx100v2_footstep_wet_02.ogg",
+     "durationS": 0.361,
+     "peakDb": -3.1,
+     "rmsDb": -22.7,
+     "activeRmsDb": -22.5,
+     "centroidHz": 3479,
+     "energyUnder220HzPct": 1,
+     "bytes": 5435,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_footstep_wet_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.4,
+      "strikes": 4,
+      "centroidHz": 3484,
+      "decay20dbMs": 145
+     }
+    },
+    {
+     "file": "footstep_wet_3.m4a",
+     "from": "oga2/sfx100v2_footstep_wet_03.ogg",
+     "durationS": 0.356,
+     "peakDb": -3.3,
+     "rmsDb": -24.3,
+     "activeRmsDb": -24.0,
+     "centroidHz": 3980,
+     "energyUnder220HzPct": 2,
+     "bytes": 5459,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_footstep_wet_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.39,
+      "strikes": 3,
+      "centroidHz": 3953,
+      "decay20dbMs": 85
+     }
+    }
+   ]
+  },
+  "drawer_open": {
+   "files": [
+    "drawer_open_1.m4a",
+    "drawer_open_2.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.7,
+   "from": "synthesised by scripts/assets_synth.py: drawer_glide(seed=9, dur=1.0, mode=open); synthesised by scripts/assets_synth.py: drawer_glide(seed=19, dur=1.25, mode=open)",
+   "why": "A wooden drawer on rollers: no recording in the packs, so it is built from the physics: roller rumble (150-950 Hz, kept above what a phone speaker drops) modulated at a rate that follows the speed, wood-on-wood friction hiss with sparse stick-slip crackles, and a wooden knock (330 and 900 Hz) where the drawer meets its stop. 1.0 s and 1.25 s takes. Synthesised stand-in.",
+   "variants": [
+    {
+     "file": "drawer_open_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: drawer_glide(seed=9, dur=1.0, mode=open)",
+     "durationS": 1.0,
+     "peakDb": -3.1,
+     "rmsDb": -19.2,
+     "activeRmsDb": -19.2,
+     "centroidHz": 503,
+     "energyUnder220HzPct": 34,
+     "bytes": 15001,
+     "sources": []
+    },
+    {
+     "file": "drawer_open_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: drawer_glide(seed=19, dur=1.25, mode=open)",
+     "durationS": 1.25,
+     "peakDb": -3.5,
+     "rmsDb": -20.0,
+     "activeRmsDb": -20.0,
+     "centroidHz": 515,
+     "energyUnder220HzPct": 28,
+     "bytes": 17165,
+     "sources": []
+    }
+   ]
+  },
+  "drawer_soft_close": {
+   "files": [
+    "drawer_soft_close_1.m4a",
+    "drawer_soft_close_2.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.55,
+   "from": "synthesised by scripts/assets_synth.py: drawer_glide(seed=10, dur=0.55, mode=soft_close); synthesised by scripts/assets_synth.py: drawer_glide(seed=20, dur=0.7, mode=soft_close)",
+   "why": "A soft-close drawer: a shorter glide that slows smoothly as the damper takes over and settles with a soft, low bump instead of a knock. Same synthesis as drawer_open with the soft-close profile; 0.55 s and 0.7 s takes. Stand-in.",
+   "variants": [
+    {
+     "file": "drawer_soft_close_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: drawer_glide(seed=10, dur=0.55, mode=soft_close)",
+     "durationS": 0.55,
+     "peakDb": -3.0,
+     "rmsDb": -16.9,
+     "activeRmsDb": -16.9,
+     "centroidHz": 440,
+     "energyUnder220HzPct": 34,
+     "bytes": 8111,
+     "sources": []
+    },
+    {
+     "file": "drawer_soft_close_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: drawer_glide(seed=20, dur=0.7, mode=soft_close)",
+     "durationS": 0.7,
+     "peakDb": -3.0,
+     "rmsDb": -18.2,
+     "activeRmsDb": -18.2,
+     "centroidHz": 460,
+     "energyUnder220HzPct": 31,
+     "bytes": 9863,
+     "sources": []
+    }
+   ]
+  },
+  "stamp_press": {
+   "files": [
+    "stamp_press_1.m4a",
+    "stamp_press_2.m4a",
+    "stamp_press_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 1.0,
+   "from": "oga1/spring_09.ogg[0.00-0.30 s] + oga1/hit_04.ogg[0.00-0.42 s] + kenney-impact/impactPlank_medium_003.ogg[0.00-0.50 s]; oga1/spring_08.ogg[0.00-0.30 s] + oga1/hit_03.ogg[0.00-0.42 s] + kenney-impact/impactPunch_heavy_001.ogg[0.00-0.50 s]; oga1/spring_07.ogg[0.00-0.35 s] + oga2/sfx100v2_hit_01.ogg[0.00-0.42 s] + kenney-impact/impactPlank_medium_001.ogg[0.00-0.50 s]",
+   "why": "A heavy office stamp, built as concept section 8 describes it: a spring creak (a pulse train from the pack-1 'spring' files: spring_09 a train of rapid pulses over 0.6 s, spring_08 and spring_07 slower ones, first 0.30-0.35 s only) followed at 0.30-0.34 s by a thick thunk. The thunk is a mid-range dull hit from the phone-recorded packs (hit_04 centroid 740 Hz, hit_03 870 Hz, pack-2 hit_01 970 Hz: audible on a phone speaker) with a low Kenney impact underneath (plank or punch, all under 300 Hz) that adds weight on bigger speakers. Layered recordings; standIn because no single recording of a stamp exists.",
+   "variants": [
+    {
+     "file": "stamp_press_1.m4a",
+     "from": "oga1/spring_09.ogg[0.00-0.30 s] + oga1/hit_04.ogg[0.00-0.42 s] + kenney-impact/impactPlank_medium_003.ogg[0.00-0.50 s]",
+     "durationS": 0.742,
+     "peakDb": -2.6,
+     "rmsDb": -21.7,
+     "activeRmsDb": -21.1,
+     "centroidHz": 713,
+     "energyUnder220HzPct": 15,
+     "bytes": 9996,
+     "sources": [
+      [
+       "oga1",
+       "spring_09.ogg"
+      ],
+      [
+       "oga1",
+       "hit_04.ogg"
+      ],
+      [
+       "ki",
+       "impactPlank_medium_003.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.61,
+      "strikes": 8,
+      "centroidHz": 2968,
+      "decay20dbMs": 180
+     }
+    },
+    {
+     "file": "stamp_press_2.m4a",
+     "from": "oga1/spring_08.ogg[0.00-0.30 s] + oga1/hit_03.ogg[0.00-0.42 s] + kenney-impact/impactPunch_heavy_001.ogg[0.00-0.50 s]",
+     "durationS": 0.729,
+     "peakDb": -3.1,
+     "rmsDb": -26.3,
+     "activeRmsDb": -25.6,
+     "centroidHz": 895,
+     "energyUnder220HzPct": 22,
+     "bytes": 9991,
+     "sources": [
+      [
+       "oga1",
+       "spring_08.ogg"
+      ],
+      [
+       "oga1",
+       "hit_03.ogg"
+      ],
+      [
+       "ki",
+       "impactPunch_heavy_001.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.7,
+      "strikes": 6,
+      "centroidHz": 5560,
+      "decay20dbMs": 155
+     }
+    },
+    {
+     "file": "stamp_press_3.m4a",
+     "from": "oga1/spring_07.ogg[0.00-0.35 s] + oga2/sfx100v2_hit_01.ogg[0.00-0.42 s] + kenney-impact/impactPlank_medium_001.ogg[0.00-0.50 s]",
+     "durationS": 0.762,
+     "peakDb": -3.2,
+     "rmsDb": -25.2,
+     "activeRmsDb": -24.3,
+     "centroidHz": 1039,
+     "energyUnder220HzPct": 35,
+     "bytes": 10245,
+     "sources": [
+      [
+       "oga1",
+       "spring_07.ogg"
+      ],
+      [
+       "oga2",
+       "sfx100v2_hit_01.ogg"
+      ],
+      [
+       "ki",
+       "impactPlank_medium_001.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.6,
+      "strikes": 5,
+      "centroidHz": 1202,
+      "decay20dbMs": 264
+     }
+    }
+   ]
+  },
+  "switch_click": {
+   "files": [
+    "switch_click_1.m4a",
+    "switch_click_2.m4a",
+    "switch_click_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.65,
+   "from": "oga2/sfx100v2_switch_01.ogg; oga2/sfx100v2_switch_02.ogg; kenney-interface/toggle_004.ogg",
+   "why": "A light switch: a crisp 'klak'. switch_01 and switch_02 of pack 2 (0.22 s, broadband clicks with centroid 2.8-3.2 kHz; names say switch) are brighter than the flush-plate pick, plus Kenney toggle_004 (0.06 s, 3.5 kHz) as the quick variant. standIn (they are switches of unknown kind).",
+   "variants": [
+    {
+     "file": "switch_click_1.m4a",
+     "from": "oga2/sfx100v2_switch_01.ogg",
+     "durationS": 0.225,
+     "peakDb": -3.7,
+     "rmsDb": -33.7,
+     "activeRmsDb": -32.8,
+     "centroidHz": 2837,
+     "energyUnder220HzPct": 0,
+     "bytes": 3998,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_switch_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.22,
+      "strikes": 1,
+      "centroidHz": 2831,
+      "decay20dbMs": 65
+     }
+    },
+    {
+     "file": "switch_click_2.m4a",
+     "from": "oga2/sfx100v2_switch_02.ogg",
+     "durationS": 0.212,
+     "peakDb": -4.3,
+     "rmsDb": -31.6,
+     "activeRmsDb": -30.7,
+     "centroidHz": 3186,
+     "energyUnder220HzPct": 3,
+     "bytes": 3716,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_switch_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.23,
+      "strikes": 1,
+      "centroidHz": 3172,
+      "decay20dbMs": 50
+     }
+    },
+    {
+     "file": "switch_click_3.m4a",
+     "from": "kenney-interface/toggle_004.ogg",
+     "durationS": 0.063,
+     "peakDb": -2.3,
+     "rmsDb": -13.7,
+     "activeRmsDb": -13.5,
+     "centroidHz": 3419,
+     "energyUnder220HzPct": 0,
+     "bytes": 1936,
+     "sources": [
+      [
+       "kf",
+       "toggle_004.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.06,
+      "strikes": 0,
+      "centroidHz": 3472,
+      "decay20dbMs": null
+     }
+    }
+   ]
+  },
+  "touch_tick": {
+   "files": [
+    "touch_tick_1.m4a",
+    "touch_tick_2.m4a",
+    "touch_tick_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": false,
+   "gain": 0.3,
+   "from": "kenney-interface/tick_001.ogg; kenney-interface/tick_002.ogg; kenney-interface/tick_004.ogg",
+   "why": "The mirror's touch key: a very soft, tiny tick. Kenney tick_001, tick_002, tick_004 (0.02-0.06 s, centroid 3.4-5 kHz): short, soft, tiny ticks with a very fast decay. Meant to be played at low volume (gain 0.3 suggested).",
+   "variants": [
+    {
+     "file": "touch_tick_1.m4a",
+     "from": "kenney-interface/tick_001.ogg",
+     "durationS": 0.029,
+     "peakDb": -3.9,
+     "rmsDb": -23.7,
+     "activeRmsDb": -23.1,
+     "centroidHz": 9289,
+     "energyUnder220HzPct": 0,
+     "bytes": 1534,
+     "sources": [
+      [
+       "kf",
+       "tick_001.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.04,
+      "strikes": 0,
+      "centroidHz": 5038,
+      "decay20dbMs": 5
+     }
+    },
+    {
+     "file": "touch_tick_2.m4a",
+     "from": "kenney-interface/tick_002.ogg",
+     "durationS": 0.02,
+     "peakDb": -3.5,
+     "rmsDb": -18.1,
+     "activeRmsDb": -18.0,
+     "centroidHz": 4432,
+     "energyUnder220HzPct": 0,
+     "bytes": 1433,
+     "sources": [
+      [
+       "kf",
+       "tick_002.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.02,
+      "strikes": 0,
+      "centroidHz": 3859,
+      "decay20dbMs": 10
+     }
+    },
+    {
+     "file": "touch_tick_3.m4a",
+     "from": "kenney-interface/tick_004.ogg",
+     "durationS": 0.036,
+     "peakDb": -3.1,
+     "rmsDb": -15.4,
+     "activeRmsDb": -15.2,
+     "centroidHz": 3505,
+     "energyUnder220HzPct": 2,
+     "bytes": 1706,
+     "sources": [
+      [
+       "kf",
+       "tick_004.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.06,
+      "strikes": 1,
+      "centroidHz": 3469,
+      "decay20dbMs": null
+     }
+    }
+   ]
+  },
+  "relay_click": {
+   "files": [
+    "relay_click_1.m4a",
+    "relay_click_2.m4a",
+    "relay_click_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.4,
+   "from": "kenney-interface/click_003.ogg; kenney-interface/click_002.ogg; kenney-interface/select_007.ogg",
+   "why": "A thermostat relay: one small metallic click. Kenney click_003 (10 ms, 96% energy at 1-3 kHz), click_002 (10 ms, 0.9 kHz) and select_007 (0.06 s, 3.5 kHz): very short single clicks with no ring. standIn (UI clicks, not a relay).",
+   "variants": [
+    {
+     "file": "relay_click_1.m4a",
+     "from": "kenney-interface/click_003.ogg",
+     "durationS": 0.007,
+     "peakDb": -3.1,
+     "rmsDb": -14.1,
+     "activeRmsDb": -14.1,
+     "centroidHz": 2025,
+     "energyUnder220HzPct": 9,
+     "bytes": 1466,
+     "sources": [
+      [
+       "kf",
+       "click_003.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.01,
+      "strikes": 0,
+      "centroidHz": 2172,
+      "decay20dbMs": null
+     }
+    },
+    {
+     "file": "relay_click_2.m4a",
+     "from": "kenney-interface/click_002.ogg",
+     "durationS": 0.012,
+     "peakDb": -3.0,
+     "rmsDb": -15.2,
+     "activeRmsDb": -14.5,
+     "centroidHz": 836,
+     "energyUnder220HzPct": 12,
+     "bytes": 1445,
+     "sources": [
+      [
+       "kf",
+       "click_002.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.01,
+      "strikes": 0,
+      "centroidHz": 892,
+      "decay20dbMs": null
+     }
+    },
+    {
+     "file": "relay_click_3.m4a",
+     "from": "kenney-interface/select_007.ogg",
+     "durationS": 0.06,
+     "peakDb": -2.8,
+     "rmsDb": -18.7,
+     "activeRmsDb": -18.0,
+     "centroidHz": 2957,
+     "energyUnder220HzPct": 0,
+     "bytes": 1840,
+     "sources": [
+      [
+       "kf",
+       "select_007.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.06,
+      "strikes": 0,
+      "centroidHz": 3503,
+      "decay20dbMs": 30
+     }
+    }
+   ]
+  },
+  "glass_door": {
+   "files": [
+    "glass_door_1.m4a",
+    "glass_door_2.m4a",
+    "glass_door_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.8,
+   "from": "kenney-impact/impactGlass_heavy_000.ogg; kenney-impact/impactGlass_heavy_002.ogg; kenney-impact/impactGlass_heavy_003.ogg",
+   "why": "A glass door or panel bumping its frame: a heavy, low-pitched glass 'tunk' (Kenney impactGlass_heavy_000, _002, _003: 0.17-0.24 s, centroid 630-820 Hz, all tonal). Lower and heavier than the knock_glass pings because a large pane rings lower. standIn.",
+   "variants": [
+    {
+     "file": "glass_door_1.m4a",
+     "from": "kenney-impact/impactGlass_heavy_000.ogg",
+     "durationS": 0.238,
+     "peakDb": -3.0,
+     "rmsDb": -25.5,
+     "activeRmsDb": -25.0,
+     "centroidHz": 698,
+     "energyUnder220HzPct": 0,
+     "bytes": 4084,
+     "sources": [
+      [
+       "ki",
+       "impactGlass_heavy_000.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.24,
+      "strikes": 1,
+      "centroidHz": 691,
+      "decay20dbMs": 35
+     }
+    },
+    {
+     "file": "glass_door_2.m4a",
+     "from": "kenney-impact/impactGlass_heavy_002.ogg",
+     "durationS": 0.244,
+     "peakDb": -3.0,
+     "rmsDb": -26.4,
+     "activeRmsDb": -25.7,
+     "centroidHz": 822,
+     "energyUnder220HzPct": 0,
+     "bytes": 4148,
+     "sources": [
+      [
+       "ki",
+       "impactGlass_heavy_002.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.24,
+      "strikes": 0,
+      "centroidHz": 823,
+      "decay20dbMs": 35
+     }
+    },
+    {
+     "file": "glass_door_3.m4a",
+     "from": "kenney-impact/impactGlass_heavy_003.ogg",
+     "durationS": 0.169,
+     "peakDb": -3.0,
+     "rmsDb": -22.2,
+     "activeRmsDb": -21.8,
+     "centroidHz": 635,
+     "energyUnder220HzPct": 0,
+     "bytes": 3188,
+     "sources": [
+      [
+       "ki",
+       "impactGlass_heavy_003.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.17,
+      "strikes": 0,
+      "centroidHz": 634,
+      "decay20dbMs": 55
+     }
+    }
+   ]
+  },
+  "ir_small_tiled": {
+   "files": [
+    "ir_small_tiled_1.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 1.0,
+   "from": "synthesised by scripts/assets_synth.py: ir_small_tiled(seed=7, rt60=0.62, length=0.9)",
+   "why": "Impulse response of a small tiled room (about 2.6 x 3.0 x 2.4 m), for a ConvolverNode used as a send reverb. Synthesised: twelve early reflections between 3 and 28 ms (nearest walls and floor), then a bright diffuse tail that decays 60 dB in about 0.6 s, a little faster at the very low and very high ends. WET ONLY (no direct sound), 0.9 s long. Mono. The ConvolverNode normalises it, so use the dry/wet balance rather than the file level.",
+   "variants": [
+    {
+     "file": "ir_small_tiled_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: ir_small_tiled(seed=7, rt60=0.62, length=0.9)",
+     "durationS": 0.9,
+     "peakDb": -3.0,
+     "rmsDb": -24.6,
+     "activeRmsDb": -22.0,
+     "centroidHz": 3446,
+     "energyUnder220HzPct": 5,
+     "bytes": 12073,
+     "sources": [],
+     "rt60Seconds": 0.65
+    }
+   ],
+   "use": "ConvolverNode buffer for a send reverb, wet only (no direct sound in the file); mix it in at about 0.2-0.35 of the dry level; keep convolver.normalize = true"
+  },
+  "cup_ting": {
+   "files": [
+    "cup_ting_1.m4a",
+    "cup_ting_2.m4a",
+    "cup_ting_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.55,
+   "from": "oga1/dishes_01.ogg[0.00-0.23 s]; oga1/dishes_01.ogg[0.27-0.62 s]; oga1/dishes_04.ogg[0.09-0.20 s]",
+   "why": "A light tap on the ceramic toothbrush cup: one bright strike with a short ring. Cut from the pack-1 files the author names 'dishes' (ceramic struck on ceramic, phone recordings): the first strike of dishes_01 (a ring near 2.1 kHz with partials at 4.0-5.9 kHz, cut before the next strike at 0.24 s), its second strike (brighter, mostly 5.9 kHz, ringing about 0.35 s) and the first strike of dishes_04 (3.7 kHz, a short 0.11 s ting). One strike each, measured. Real ceramic, but dishes and not this cup: standIn. Also fits a brush clinking back into the cup.",
+   "variants": [
+    {
+     "file": "cup_ting_1.m4a",
+     "from": "oga1/dishes_01.ogg[0.00-0.23 s]",
+     "durationS": 0.218,
+     "peakDb": -3.5,
+     "rmsDb": -20.9,
+     "activeRmsDb": -20.7,
+     "centroidHz": 4140,
+     "energyUnder220HzPct": 0,
+     "bytes": 4010,
+     "sources": [
+      [
+       "oga1",
+       "dishes_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.79,
+      "strikes": 4,
+      "centroidHz": 4829,
+      "decay20dbMs": 100
+     }
+    },
+    {
+     "file": "cup_ting_2.m4a",
+     "from": "oga1/dishes_01.ogg[0.27-0.62 s]",
+     "durationS": 0.355,
+     "peakDb": -3.0,
+     "rmsDb": -24.0,
+     "activeRmsDb": -23.5,
+     "centroidHz": 3953,
+     "energyUnder220HzPct": 7,
+     "bytes": 5426,
+     "sources": [
+      [
+       "oga1",
+       "dishes_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.79,
+      "strikes": 4,
+      "centroidHz": 4829,
+      "decay20dbMs": 100
+     }
+    },
+    {
+     "file": "cup_ting_3.m4a",
+     "from": "oga1/dishes_04.ogg[0.09-0.20 s]",
+     "durationS": 0.11,
+     "peakDb": -3.6,
+     "rmsDb": -18.7,
+     "activeRmsDb": -18.7,
+     "centroidHz": 4248,
+     "energyUnder220HzPct": 1,
+     "bytes": 2545,
+     "sources": [
+      [
+       "oga1",
+       "dishes_04.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.61,
+      "strikes": 5,
+      "centroidHz": 3429,
+      "decay20dbMs": 120
+     }
+    }
+   ]
+  },
+  "scale_tick": {
+   "files": [
+    "scale_tick_1.m4a",
+    "scale_tick_2.m4a",
+    "scale_tick_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.25,
+   "from": "oga2/sfx100v2_stones_03.ogg[0.30-0.34 s]; oga2/sfx100v2_stones_03.ogg[0.38-0.42 s]; oga2/sfx100v2_lock_open_01.ogg[0.14-0.20 s]",
+   "why": "The analogue scale's needle settling: tiny dry ticks, several in a row, played softly (gain 0.25). Single isolated clicks found by scanning both oga packs (a 20 dB rise and fall within about 12 ms, nothing else within 60 ms): two pebble clicks from pack-2 stones_03 (at 0.31 s and 0.385 s; 3.6-3.9 kHz, gone in about 5 ms) and one small metal click from pack-2 lock_open_01 (at 0.15 s; brighter, 5.4 kHz). Real clicks, not a scale's mechanism: standIn.",
+   "variants": [
+    {
+     "file": "scale_tick_1.m4a",
+     "from": "oga2/sfx100v2_stones_03.ogg[0.30-0.34 s]",
+     "durationS": 0.043,
+     "peakDb": -3.1,
+     "rmsDb": -27.0,
+     "activeRmsDb": -26.7,
+     "centroidHz": 3634,
+     "energyUnder220HzPct": 0,
+     "bytes": 1798,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_stones_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.53,
+      "strikes": 6,
+      "centroidHz": 4846,
+      "decay20dbMs": 20
+     }
+    },
+    {
+     "file": "scale_tick_2.m4a",
+     "from": "oga2/sfx100v2_stones_03.ogg[0.38-0.42 s]",
+     "durationS": 0.049,
+     "peakDb": -3.1,
+     "rmsDb": -28.6,
+     "activeRmsDb": -28.2,
+     "centroidHz": 3920,
+     "energyUnder220HzPct": 0,
+     "bytes": 1739,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_stones_03.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.53,
+      "strikes": 6,
+      "centroidHz": 4846,
+      "decay20dbMs": 20
+     }
+    },
+    {
+     "file": "scale_tick_3.m4a",
+     "from": "oga2/sfx100v2_lock_open_01.ogg[0.14-0.20 s]",
+     "durationS": 0.06,
+     "peakDb": -3.0,
+     "rmsDb": -21.0,
+     "activeRmsDb": -21.0,
+     "centroidHz": 5380,
+     "energyUnder220HzPct": 0,
+     "bytes": 1901,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_lock_open_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.64,
+      "strikes": 5,
+      "centroidHz": 5710,
+      "decay20dbMs": 45
+     }
+    }
+   ]
+  },
+  "scale_spring": {
+   "files": [
+    "scale_spring_1.m4a",
+    "scale_spring_2.m4a",
+    "scale_spring_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.75,
+   "from": "oga1/metal_01.ogg + oga1/spring_04.ogg; oga1/metal_01.ogg + oga1/spring_05.ogg; oga1/metal_01.ogg + oga1/spring_04.ogg[0.03-end s] + kenney-impact/impactPlate_light_000.ogg",
+   "why": "Stepping on the analogue scale: the plate gives with a dull sheet-metal 'bonk' while the springs take the weight. Layered recordings: the bonk is pack-1 metal_01 (one dull metal strike, centroid about 720 Hz, 20 dB down in about 0.13 s); the spring is pack-1 spring_04 (a single spring strike with partials at 1.1, 2.5 and 5.9 kHz, about 0.25 s) 8-12 ms later and 4-6 dB lower, or pack-1 spring_05 (a low spring ring at 323 Hz that hums on for half a second). Variant 3 adds Kenney's impactPlate_light_000 8 dB down for weight on bigger speakers. Real metal and springs, not a scale: standIn.",
+   "variants": [
+    {
+     "file": "scale_spring_1.m4a",
+     "from": "oga1/metal_01.ogg + oga1/spring_04.ogg",
+     "durationS": 0.54,
+     "peakDb": -3.0,
+     "rmsDb": -23.4,
+     "activeRmsDb": -21.9,
+     "centroidHz": 938,
+     "energyUnder220HzPct": 22,
+     "bytes": 7616,
+     "sources": [
+      [
+       "oga1",
+       "metal_01.ogg"
+      ],
+      [
+       "oga1",
+       "spring_04.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.61,
+      "strikes": 1,
+      "centroidHz": 717,
+      "decay20dbMs": 120
+     }
+    },
+    {
+     "file": "scale_spring_2.m4a",
+     "from": "oga1/metal_01.ogg + oga1/spring_05.ogg",
+     "durationS": 0.567,
+     "peakDb": -3.0,
+     "rmsDb": -21.4,
+     "activeRmsDb": -21.0,
+     "centroidHz": 398,
+     "energyUnder220HzPct": 17,
+     "bytes": 7967,
+     "sources": [
+      [
+       "oga1",
+       "metal_01.ogg"
+      ],
+      [
+       "oga1",
+       "spring_05.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.61,
+      "strikes": 1,
+      "centroidHz": 717,
+      "decay20dbMs": 120
+     }
+    },
+    {
+     "file": "scale_spring_3.m4a",
+     "from": "oga1/metal_01.ogg + oga1/spring_04.ogg[0.03-end s] + kenney-impact/impactPlate_light_000.ogg",
+     "durationS": 0.596,
+     "peakDb": -2.8,
+     "rmsDb": -23.5,
+     "activeRmsDb": -22.3,
+     "centroidHz": 890,
+     "energyUnder220HzPct": 23,
+     "bytes": 8203,
+     "sources": [
+      [
+       "oga1",
+       "metal_01.ogg"
+      ],
+      [
+       "oga1",
+       "spring_04.ogg"
+      ],
+      [
+       "ki",
+       "impactPlate_light_000.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.61,
+      "strikes": 1,
+      "centroidHz": 717,
+      "decay20dbMs": 120
+     }
+    }
+   ]
+  },
+  "brush_slide": {
+   "files": [
+    "brush_slide_1.m4a",
+    "brush_slide_2.m4a",
+    "brush_slide_3.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.5,
+   "from": "synthesised by scripts/assets_synth.py: brush_slide(seed=81, dur=0.4, bristles=0.07, tick=True); synthesised by scripts/assets_synth.py: brush_slide(seed=82, dur=0.34, bristles=0.06, tick=False); synthesised by scripts/assets_synth.py: brush_slide(seed=83, dur=0.42, bristles=0.08, tick=True)",
+   "why": "Pulling a toothbrush up out of the ceramic cup (the inventory's bristle 'frrt'). No recording of it in the packs, so it is built from its parts: the plastic handle sliding on the glazed rim is a quiet friction hiss that makes the cup ring faintly at ceramic modes like those measured in the pack's dish recordings (about 2.1, 3.7, 4.4, 5.9 kHz); at 0.20 s in every variant the bristles flick over the rim (300-450 tiny ticks a second for 60-80 ms), the loudest part; variants 1 and 3 end with the handle's end tapping the rim ('tk'). Synthesised stand-in.",
+   "variants": [
+    {
+     "file": "brush_slide_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: brush_slide(seed=81, dur=0.4, bristles=0.07, tick=True)",
+     "durationS": 0.4,
+     "peakDb": -3.3,
+     "rmsDb": -25.8,
+     "activeRmsDb": -25.8,
+     "centroidHz": 4202,
+     "energyUnder220HzPct": 0,
+     "bytes": 5940,
+     "sources": []
+    },
+    {
+     "file": "brush_slide_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: brush_slide(seed=82, dur=0.34, bristles=0.06, tick=False)",
+     "durationS": 0.34,
+     "peakDb": -3.3,
+     "rmsDb": -26.1,
+     "activeRmsDb": -25.2,
+     "centroidHz": 4373,
+     "energyUnder220HzPct": 0,
+     "bytes": 4569,
+     "sources": []
+    },
+    {
+     "file": "brush_slide_3.m4a",
+     "from": "synthesised by scripts/assets_synth.py: brush_slide(seed=83, dur=0.42, bristles=0.08, tick=True)",
+     "durationS": 0.42,
+     "peakDb": -3.1,
+     "rmsDb": -24.9,
+     "activeRmsDb": -24.8,
+     "centroidHz": 3998,
+     "energyUnder220HzPct": 0,
+     "bytes": 6233,
+     "sources": []
+    }
+   ]
+  },
+  "towel_flap": {
+   "files": [
+    "towel_flap_1.m4a",
+    "towel_flap_2.m4a",
+    "towel_flap_3.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.55,
+   "from": "synthesised by scripts/assets_synth.py: towel_flap(seed=41, dur=0.55, body=420.0); synthesised by scripts/assets_synth.py: towel_flap(seed=42, dur=0.62, body=360.0); synthesised by scripts/assets_synth.py: towel_flap(seed=43, dur=0.5, body=480.0)",
+   "why": "A towel shaken out: a soft whoosh of pushed air (a band rising from about 200-260 Hz to 520-700 Hz) while the free edge flaps faster and faster, then the snap as the towel pulls taut: a dull pressure pulse (mostly 200 Hz-2.6 kHz with only a little crack, because terry is thick), then smaller flaps as it springs back. The snap comes 0.32 s after the start in every variant, so a shake can be timed to it. No cloth recordings in the packs; synthesised stand-in.",
+   "variants": [
+    {
+     "file": "towel_flap_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: towel_flap(seed=41, dur=0.55, body=420.0)",
+     "durationS": 0.55,
+     "peakDb": -3.3,
+     "rmsDb": -26.4,
+     "activeRmsDb": -25.7,
+     "centroidHz": 900,
+     "energyUnder220HzPct": 3,
+     "bytes": 7831,
+     "sources": []
+    },
+    {
+     "file": "towel_flap_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: towel_flap(seed=42, dur=0.62, body=360.0)",
+     "durationS": 0.62,
+     "peakDb": -3.0,
+     "rmsDb": -26.2,
+     "activeRmsDb": -25.6,
+     "centroidHz": 842,
+     "energyUnder220HzPct": 34,
+     "bytes": 8817,
+     "sources": []
+    },
+    {
+     "file": "towel_flap_3.m4a",
+     "from": "synthesised by scripts/assets_synth.py: towel_flap(seed=43, dur=0.5, body=480.0)",
+     "durationS": 0.5,
+     "peakDb": -3.0,
+     "rmsDb": -26.3,
+     "activeRmsDb": -25.7,
+     "centroidHz": 1090,
+     "energyUnder220HzPct": 2,
+     "bytes": 7335,
+     "sources": []
+    }
+   ]
+  },
+  "towel_fump": {
+   "files": [
+    "towel_fump_1.m4a",
+    "towel_fump_2.m4a",
+    "towel_fump_3.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.5,
+   "from": "synthesised by scripts/assets_synth.py: towel_fump(seed=51, dur=0.32, body=380.0, weight=1.0); synthesised by scripts/assets_synth.py: towel_fump(seed=52, dur=0.36, body=330.0, weight=1.2); synthesised by scripts/assets_synth.py: towel_fump(seed=53, dur=0.28, body=430.0, weight=0.85)",
+   "why": "A towel landing on the rail, a hook or the top: a soft, muffled 'fump' (the cloth 'fump' of the research inventory). Cloth gives way, so the attack takes a few milliseconds; most of the sound sits at about 170 Hz-1.4 kHz, which a phone speaker still plays, with a light thud of its weight and the air pressed out of the folds (0.7-3.6 kHz). Starts at once; a medium, a heavier and a lighter towel. No cloth recordings in the packs; synthesised stand-in.",
+   "variants": [
+    {
+     "file": "towel_fump_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: towel_fump(seed=51, dur=0.32, body=380.0, weight=1.0)",
+     "durationS": 0.32,
+     "peakDb": -3.0,
+     "rmsDb": -22.7,
+     "activeRmsDb": -21.5,
+     "centroidHz": 1099,
+     "energyUnder220HzPct": 2,
+     "bytes": 5194,
+     "sources": []
+    },
+    {
+     "file": "towel_fump_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: towel_fump(seed=52, dur=0.36, body=330.0, weight=1.2)",
+     "durationS": 0.36,
+     "peakDb": -2.5,
+     "rmsDb": -20.0,
+     "activeRmsDb": -18.8,
+     "centroidHz": 825,
+     "energyUnder220HzPct": 11,
+     "bytes": 5632,
+     "sources": []
+    },
+    {
+     "file": "towel_fump_3.m4a",
+     "from": "synthesised by scripts/assets_synth.py: towel_fump(seed=53, dur=0.28, body=430.0, weight=0.85)",
+     "durationS": 0.28,
+     "peakDb": -3.0,
+     "rmsDb": -22.4,
+     "activeRmsDb": -21.5,
+     "centroidHz": 1232,
+     "energyUnder220HzPct": 1,
+     "bytes": 4500,
+     "sources": []
+    }
+   ]
+  },
+  "towel_rustle": {
+   "files": [
+    "towel_rustle_1.m4a",
+    "towel_rustle_2.m4a",
+    "towel_rustle_3.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.45,
+   "from": "synthesised by scripts/assets_synth.py: towel_rustle(seed=91, dur=0.36, strokes=1); synthesised by scripts/assets_synth.py: towel_rustle(seed=92, dur=0.48, strokes=2, bright=0.85); synthesised by scripts/assets_synth.py: towel_rustle(seed=93, dur=0.24, strokes=1, bright=1.15)",
+   "why": "Terry cloth handled (the towel wiring plays it when a towel is lifted off the rail, hung back, and when its label is turned and let go): a soft, rough 'shhff' of the hand dragging cloth over cloth or over the rail, made of many tiny catches of the terry loops (3-10 ms, 600 Hz-4.5 kHz, about 300 a second) over a smooth hiss of fabric on fabric, rising in 60 ms, no hard strike. A take (0.36 s), a slide over the rail in two strokes (0.48 s, a little darker) and a quick turn of a corner (0.24 s, a little brighter). No cloth recordings in the packs; synthesised stand-in.",
+   "variants": [
+    {
+     "file": "towel_rustle_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: towel_rustle(seed=91, dur=0.36, strokes=1)",
+     "durationS": 0.36,
+     "peakDb": -3.3,
+     "rmsDb": -20.1,
+     "activeRmsDb": -19.6,
+     "centroidHz": 2058,
+     "energyUnder220HzPct": 0,
+     "bytes": 5075,
+     "sources": []
+    },
+    {
+     "file": "towel_rustle_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: towel_rustle(seed=92, dur=0.48, strokes=2, bright=0.85)",
+     "durationS": 0.48,
+     "peakDb": -3.1,
+     "rmsDb": -21.1,
+     "activeRmsDb": -21.0,
+     "centroidHz": 1982,
+     "energyUnder220HzPct": 0,
+     "bytes": 6859,
+     "sources": []
+    },
+    {
+     "file": "towel_rustle_3.m4a",
+     "from": "synthesised by scripts/assets_synth.py: towel_rustle(seed=93, dur=0.24, strokes=1, bright=1.15)",
+     "durationS": 0.24,
+     "peakDb": -3.0,
+     "rmsDb": -19.4,
+     "activeRmsDb": -19.2,
+     "centroidHz": 2313,
+     "energyUnder220HzPct": 0,
+     "bytes": 3955,
+     "sources": []
+    }
+   ]
+  },
+  "knock_wicker": {
+   "files": [
+    "knock_wicker_1.m4a",
+    "knock_wicker_2.m4a",
+    "knock_wicker_3.m4a"
+   ],
+   "loop": false,
+   "kind": "recorded",
+   "standIn": true,
+   "gain": 0.7,
+   "from": "oga2/sfx100v2_wood_01.ogg[0.00-0.20 s]; oga2/sfx100v2_wood_02.ogg[0.00-0.16 s]; oga2/sfx100v2_wood_04.ogg",
+   "why": "A knuckle on the wicker basket (the plant wiring plays it; it fell back to a slowed wood knock while this role was missing): a light, dry knock with a short rattle of the woven strands. Cut from the pack-2 files the author names 'wood' (not used by knock_wood): the first 0.20 s of wood_01 (a knock and a dense little rattle, centroid about 3.5 kHz), the first 0.16 s of wood_02 (a knock and two small after-hits) and the whole of wood_04 (a single dry knock, about 1.4 kHz). Real wood, not a basket: standIn.",
+   "variants": [
+    {
+     "file": "knock_wicker_1.m4a",
+     "from": "oga2/sfx100v2_wood_01.ogg[0.00-0.20 s]",
+     "durationS": 0.186,
+     "peakDb": -3.0,
+     "rmsDb": -22.4,
+     "activeRmsDb": -22.0,
+     "centroidHz": 3464,
+     "energyUnder220HzPct": 1,
+     "bytes": 3381,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_wood_01.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.53,
+      "strikes": 5,
+      "centroidHz": 3840,
+      "decay20dbMs": 80
+     }
+    },
+    {
+     "file": "knock_wicker_2.m4a",
+     "from": "oga2/sfx100v2_wood_02.ogg[0.00-0.16 s]",
+     "durationS": 0.154,
+     "peakDb": -3.0,
+     "rmsDb": -23.6,
+     "activeRmsDb": -23.2,
+     "centroidHz": 2929,
+     "energyUnder220HzPct": 12,
+     "bytes": 3124,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_wood_02.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.45,
+      "strikes": 6,
+      "centroidHz": 2871,
+      "decay20dbMs": 50
+     }
+    },
+    {
+     "file": "knock_wicker_3.m4a",
+     "from": "oga2/sfx100v2_wood_04.ogg",
+     "durationS": 0.153,
+     "peakDb": -3.4,
+     "rmsDb": -25.5,
+     "activeRmsDb": -24.4,
+     "centroidHz": 1363,
+     "energyUnder220HzPct": 14,
+     "bytes": 2827,
+     "sources": [
+      [
+       "oga2",
+       "sfx100v2_wood_04.ogg"
+      ]
+     ],
+     "sourceMeasured": {
+      "durationS": 0.22,
+      "strikes": 2,
+      "centroidHz": 1262,
+      "decay20dbMs": 40
+     }
+    }
+   ]
+  },
+  "leaf_rustle": {
+   "files": [
+    "leaf_rustle_1.m4a",
+    "leaf_rustle_2.m4a",
+    "leaf_rustle_3.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.45,
+   "from": "synthesised by scripts/assets_synth.py: leaf_rustle(seed=61, dur=0.75, peak_rate=70.0, sweep=0.42, late=4); synthesised by scripts/assets_synth.py: leaf_rustle(seed=62, dur=0.55, peak_rate=80.0, sweep=0.3, late=3); synthesised by scripts/assets_synth.py: leaf_rustle(seed=63, dur=0.95, peak_rate=60.0, sweep=0.55, late=6)",
+   "why": "A hand brushing the plant: many small leaf touches whose rate swells and fades as the hand passes, dry edge ticks (1.4-4 kHz, gone in 1-3 ms) and short leaf-on-leaf swishes (12-35 ms), then a few softer touches as the leaves swing back. Living leaves are soft, so it is rolled off below 500 Hz and above 8 kHz and is gentler than the paper sounds. The packs hold no leaves (their crackles are paper); synthesised stand-in, a quick touch (0.55 s), a brush (0.75 s) and a slower stroke (0.95 s).",
+   "variants": [
+    {
+     "file": "leaf_rustle_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: leaf_rustle(seed=61, dur=0.75, peak_rate=70.0, sweep=0.42, late=4)",
+     "durationS": 0.75,
+     "peakDb": -3.1,
+     "rmsDb": -25.7,
+     "activeRmsDb": -25.1,
+     "centroidHz": 3902,
+     "energyUnder220HzPct": 0,
+     "bytes": 9316,
+     "sources": []
+    },
+    {
+     "file": "leaf_rustle_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: leaf_rustle(seed=62, dur=0.55, peak_rate=80.0, sweep=0.3, late=3)",
+     "durationS": 0.55,
+     "peakDb": -3.1,
+     "rmsDb": -24.8,
+     "activeRmsDb": -23.9,
+     "centroidHz": 3575,
+     "energyUnder220HzPct": 0,
+     "bytes": 6757,
+     "sources": []
+    },
+    {
+     "file": "leaf_rustle_3.m4a",
+     "from": "synthesised by scripts/assets_synth.py: leaf_rustle(seed=63, dur=0.95, peak_rate=60.0, sweep=0.55, late=6)",
+     "durationS": 0.95,
+     "peakDb": -3.1,
+     "rmsDb": -25.7,
+     "activeRmsDb": -25.4,
+     "centroidHz": 4075,
+     "energyUnder220HzPct": 0,
+     "bytes": 11210,
+     "sources": []
+    }
+   ]
+  },
+  "duck_squeak": {
+   "files": [
+    "duck_squeak_1.m4a",
+    "duck_squeak_2.m4a",
+    "duck_squeak_3.m4a"
+   ],
+   "loop": false,
+   "kind": "synth",
+   "standIn": true,
+   "gain": 0.5,
+   "from": "synthesised by scripts/assets_synth.py: duck_squeak(seed=71, f0=1000.0, squeeze=0.22); synthesised by scripts/assets_synth.py: duck_squeak(seed=72, f0=1100.0, squeeze=0.17, release=0.1); synthesised by scripts/assets_synth.py: duck_squeak(seed=73, f0=920.0, squeeze=0.14)",
+   "why": "A rubber duck squeezed: the squeaker's reed beats against its slot, a buzzy harmonic tone; the pressure builds in about 12 ms and empties as the duck goes flat, the pitch rises a little with the pressure and wavers like a real reed, and the squeak ends in a breath of air. Pitched near 1 kHz (0.92-1.1 kHz) on purpose: a mid squeak, short (0.22-0.30 s; 0.43 s with the refill squeak), not a high cartoon whistle. Variant 2 adds the softer, higher squeak of the duck filling up again. The packs hold no squeak toy (their nearest squeak, the one its author named pack-1 door_open, sits at about 4 kHz); synthesised stand-in.",
+   "variants": [
+    {
+     "file": "duck_squeak_1.m4a",
+     "from": "synthesised by scripts/assets_synth.py: duck_squeak(seed=71, f0=1000.0, squeeze=0.22)",
+     "durationS": 0.3,
+     "peakDb": -3.0,
+     "rmsDb": -15.0,
+     "activeRmsDb": -14.8,
+     "centroidHz": 1382,
+     "energyUnder220HzPct": 0,
+     "bytes": 4945,
+     "sources": []
+    },
+    {
+     "file": "duck_squeak_2.m4a",
+     "from": "synthesised by scripts/assets_synth.py: duck_squeak(seed=72, f0=1100.0, squeeze=0.17, release=0.1)",
+     "durationS": 0.43,
+     "peakDb": -2.9,
+     "rmsDb": -16.6,
+     "activeRmsDb": -16.5,
+     "centroidHz": 1676,
+     "energyUnder220HzPct": 0,
+     "bytes": 6635,
+     "sources": []
+    },
+    {
+     "file": "duck_squeak_3.m4a",
+     "from": "synthesised by scripts/assets_synth.py: duck_squeak(seed=73, f0=920.0, squeeze=0.14)",
+     "durationS": 0.22,
+     "peakDb": -4.5,
+     "rmsDb": -16.6,
+     "activeRmsDb": -15.8,
+     "centroidHz": 1243,
+     "energyUnder220HzPct": 0,
+     "bytes": 4152,
+     "sources": []
+    }
+   ]
+  }
+ }
+}
