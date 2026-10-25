@@ -18,7 +18,7 @@ export const LAYOUT = {
       wall_back: 0.25, // a joint on the basin's axis (x 1.75): equal 25 cm cuts in both corners
       wall_front: 0, // u runs from the right corner: a joint on the door's centre line (x 1.4), equal cuts by the casings
       wall_left: 0, // u runs from the door corner: 3.0 m is ten whole tiles
-      wall_right: 0, // the window (z 0.9-1.5) and the toilet's centre (z 1.2) on joints: the boxing gets equal 15 cm cuts
+      wall_right: 0, // the window (z 1.2-1.8) and the toilet's centre (z 1.5) on joints: the boxing gets equal 15 cm cuts
       rows: 0.2, // rows set out from the vanity line: joints at the counter top (0.8) and the mirror cabinet's
       // underside (1.1); a 20 cm row at the floor (cut to its fall) and a 10 cm row at the ceiling; the niche and the
       // window sit on these joints (Claude's call 2026-10-19: no sliver under the cabinet)
@@ -57,14 +57,16 @@ export const LAYOUT = {
     counter: { clipboard: { x: 2.05, z: 0.28 }, phone: { x: 1.42, z: 0.3 }, soap: { x: 1.36, z: 0.12 } },
   },
   mirror: { wall: 'back', x0: 1.25, x1: 2.25, y0: 1.1, y1: 1.8, depth: 0.14, display: { u0: 0.56, u1: 0.94, v0: 0.08, v1: 0.42 } },
-  // Wall-hung toilet on the right wall, facing left; frame boxed in.
+  // Wall-hung toilet on the right wall, facing left; frame boxed in. Its centre 1.04 m from the vanity's front and 0.9 m
+  // from the washer: the bowl stays out of the room to stand at the basin (the owner, 2026-10-25: "its to near to the
+  // sink"; the distances in tests/layout.test.js).
   toilet: {
-    wall: 'right', z: 1.2, boxing: { z0: 0.75, z1: 1.65, depth: 0.2, height: 1.2 },
-    paperHolder: { wall: 'right', z: 1.72, y: 0.72 },
+    wall: 'right', z: 1.5, boxing: { z0: 1.05, z1: 1.95, depth: 0.2, height: 1.2 },
+    paperHolder: { wall: 'right', z: 2.02, y: 0.72 },
   },
   // The window is in a dry wall (never in a wet zone: the owner's rule, 2026-10-19): over the toilet, centred on it,
   // clear of the boxing's shelf. A tiled-in reveal, 20 cm deep.
-  window: { wall: 'right', z0: 0.9, z1: 1.5, y0: 1.4, y1: 2.0, depth: 0.2 }, // edges on the tile joints
+  window: { wall: 'right', z0: 1.2, z1: 1.8, y0: 1.4, y1: 2.0, depth: 0.2 }, // edges on the tile joints
   // Two potted plants, a rubber duck and a wicker basket (photographed models, fixtures/plants.js): where each one's
   // foot stands (x, z, on its surface: the window sill, the floor, the shower niche's shelf), its yaw (radians,
   // three.js rotation.y), its scale (of the model's own metres) and, for a plant, how far its pot turns each way when
@@ -72,7 +74,7 @@ export const LAYOUT = {
   // and the tilting sash, at every turn and sway. reach: the floor a floor thing covers at any turn and sway (for the
   // walking area). The succulent turns all the way round (a small round pot in front of the window frame).
   plants: {
-    succulent: { surface: 'sill', x: 2.64, z: 1.32, yaw: 0, scale: 0.45, turn: Math.PI },
+    succulent: { surface: 'sill', x: 2.64, z: 1.62, yaw: 0, scale: 0.45, turn: Math.PI },
     leafyPlant: { surface: 'floor', x: 2.4, z: 0.2, yaw: 2.531, scale: 0.5, turn: 0.349, reach: { x0: 2.25, x1: 2.6, z0: 0.02, z1: 0.43 } },
   },
   duck: { surface: 'nicheShelf', x: 0.44, z: -0.045, yaw: 0.698, scale: 0.32 }, // facing out, toward the room
